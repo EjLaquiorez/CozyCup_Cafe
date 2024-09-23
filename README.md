@@ -36,8 +36,8 @@ A page where customers can find our contact information, send inquiries, and vie
 
 ### 5. Connect with Us
 <a href="https://www.facebook.com/lqrz008" target="_blank">
-    <img src="PNG/Black/Facebook_black.png" alt="Facebook" width="30" style="margin-right: 10px;"/>
+    <img src="images/Facebook.png" alt="Facebook" width="30" style="margin-right: 10px;"/>
 </a>
 <a href="https://github.com/EjLaquiorez" target="_blank">
-    <img src="PNG/Black/Github_black.png" alt="GitHub" width="30"/>
+    <img src="images/Github.png" alt="GitHub" width="30"/>
 </a>
