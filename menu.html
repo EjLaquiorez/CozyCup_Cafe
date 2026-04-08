@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-menu">
     <header class="site-header">
         <div class="section-inner navbar">
             <a href="index.html" class="logo-link">
@@ -27,80 +27,186 @@
         </div>
     </header>
 
-    <main class="page-main">
-        <div class="section-inner menu-page">
-            <h1 class="page-title">Our Menu</h1>
-            <p class="page-intro">Coffee roasted in small batches and pastries baked fresh daily.</p>
+    <main class="page-main menu-main">
+        <section class="menu-hero" aria-labelledby="menu-heading">
+            <div class="menu-hero__texture" aria-hidden="true"></div>
+            <div class="section-inner menu-hero__inner">
+                <p class="menu-hero__eyebrow">Fresh daily</p>
+                <h1 id="menu-heading" class="menu-hero__title">The menu</h1>
+                <p class="menu-hero__lead">Single-origin espresso, house syrups, and pastries from our oven—all listed with nothing to hide.</p>
+                <nav class="menu-jump" aria-label="Skip to section">
+                    <a class="menu-jump__btn" href="#coffee-menu"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i> Coffee</a>
+                    <a class="menu-jump__btn" href="#pastry-menu"><i class="fa-solid fa-croissant" aria-hidden="true"></i> Pastries</a>
+                </nav>
+            </div>
+        </section>
 
-            <section class="menu-section" aria-labelledby="coffee-heading">
-                <h2 id="coffee-heading" class="menu-section-title">Coffee</h2>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <h3 class="menu-item-title">Espresso</h3>
-                        <p>A rich and bold espresso blend with notes of chocolate and caramel.</p>
-                        <span class="menu-price">$5.00</span>
+        <div class="section-inner menu-page">
+            <section class="menu-board" id="coffee-menu" aria-labelledby="coffee-heading">
+                <header class="menu-board__head">
+                    <span class="menu-board__icon" aria-hidden="true"><i class="fa-solid fa-mug-saucer"></i></span>
+                    <div>
+                        <h2 id="coffee-heading" class="menu-board__title">Coffee &amp; espresso</h2>
+                        <p class="menu-board__note">Hot drinks · sizes regular &amp; large</p>
                     </div>
-                    <div class="menu-item">
-                        <h3 class="menu-item-title">Latte</h3>
-                        <p>Smooth and creamy with a hint of vanilla, perfect for your morning start.</p>
-                        <span class="menu-price">$4.50</span>
-                    </div>
-                    <div class="menu-item">
-                        <h3 class="menu-item-title">Cappuccino</h3>
-                        <p>A classic blend of espresso, steamed milk, and froth.</p>
-                        <span class="menu-price">$4.75</span>
-                    </div>
-                    <div class="menu-item">
-                        <h3 class="menu-item-title">Macchiato</h3>
-                        <p>A shot of espresso with a touch of steamed milk.</p>
-                        <span class="menu-price">$4.00</span>
-                    </div>
-                    <div class="menu-item">
-                        <h3 class="menu-item-title">Mocha</h3>
-                        <p>A chocolate-flavored coffee with whipped cream on top.</p>
-                        <span class="menu-price">$5.50</span>
-                    </div>
-                    <div class="menu-item">
-                        <h3 class="menu-item-title">Americano</h3>
-                        <p>A diluted espresso for a smooth, less intense flavor.</p>
-                        <span class="menu-price">$4.25</span>
-                    </div>
+                </header>
+                <div class="menu-cards">
+                    <article class="menu-card">
+                        <div class="menu-card__media">
+                            <img src="images/Espresso.png" alt="" width="400" height="300" class="menu-card__img">
+                        </div>
+                        <div class="menu-card__body">
+                            <div class="menu-card__row">
+                                <h3 class="menu-card__name">Espresso</h3>
+                                <span class="menu-card__price">$5.00</span>
+                            </div>
+                            <p class="menu-card__desc">A rich and bold espresso blend with notes of chocolate and caramel.</p>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card__media">
+                            <img src="images/machiatto.jpg" alt="" width="400" height="300" class="menu-card__img">
+                        </div>
+                        <div class="menu-card__body">
+                            <div class="menu-card__row">
+                                <h3 class="menu-card__name">Latte</h3>
+                                <span class="menu-card__price">$4.50</span>
+                            </div>
+                            <p class="menu-card__desc">Smooth and creamy with a hint of vanilla, perfect for your morning start.</p>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card__media menu-card__media--placeholder">
+                            <i class="fa-solid fa-cloud" aria-hidden="true"></i>
+                        </div>
+                        <div class="menu-card__body">
+                            <div class="menu-card__row">
+                                <h3 class="menu-card__name">Cappuccino</h3>
+                                <span class="menu-card__price">$4.75</span>
+                            </div>
+                            <p class="menu-card__desc">A classic blend of espresso, steamed milk, and silky foamed milk.</p>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card__media">
+                            <img src="images/machiatto.jpg" alt="" width="400" height="300" class="menu-card__img">
+                        </div>
+                        <div class="menu-card__body">
+                            <div class="menu-card__row">
+                                <h3 class="menu-card__name">Macchiato</h3>
+                                <span class="menu-card__price">$4.00</span>
+                            </div>
+                            <p class="menu-card__desc">A shot of espresso with a touch of steamed milk.</p>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card__media">
+                            <img src="images/Espresso.png" alt="" width="400" height="300" class="menu-card__img">
+                        </div>
+                        <div class="menu-card__body">
+                            <div class="menu-card__row">
+                                <h3 class="menu-card__name">Mocha</h3>
+                                <span class="menu-card__price">$5.50</span>
+                            </div>
+                            <p class="menu-card__desc">A chocolate-flavored coffee with whipped cream on top.</p>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card__media menu-card__media--placeholder">
+                            <i class="fa-solid fa-droplet" aria-hidden="true"></i>
+                        </div>
+                        <div class="menu-card__body">
+                            <div class="menu-card__row">
+                                <h3 class="menu-card__name">Americano</h3>
+                                <span class="menu-card__price">$4.25</span>
+                            </div>
+                            <p class="menu-card__desc">Espresso softened with hot water for a smooth, mellow cup.</p>
+                        </div>
+                    </article>
                 </div>
             </section>
 
-            <section class="menu-section" aria-labelledby="pastry-heading">
-                <h2 id="pastry-heading" class="menu-section-title">Pastries</h2>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <h3 class="menu-item-title">Chocolate Croissant</h3>
-                        <p>A flaky croissant filled with rich, melted chocolate.</p>
-                        <span class="menu-price">$3.00</span>
+            <section class="menu-board menu-board--alt" id="pastry-menu" aria-labelledby="pastry-heading">
+                <header class="menu-board__head">
+                    <span class="menu-board__icon" aria-hidden="true"><i class="fa-solid fa-croissant"></i></span>
+                    <div>
+                        <h2 id="pastry-heading" class="menu-board__title">Pastry case</h2>
+                        <p class="menu-board__note">Baked in-house · while supplies last</p>
                     </div>
-                    <div class="menu-item">
-                        <h3 class="menu-item-title">Blueberry Muffin</h3>
-                        <p>Soft and moist muffin bursting with fresh blueberries.</p>
-                        <span class="menu-price">$2.50</span>
-                    </div>
-                    <div class="menu-item">
-                        <h3 class="menu-item-title">Scone</h3>
-                        <p>A buttery scone with a hint of vanilla, perfect with your coffee.</p>
-                        <span class="menu-price">$2.00</span>
-                    </div>
-                    <div class="menu-item">
-                        <h3 class="menu-item-title">Apple Turnover</h3>
-                        <p>A sweet pastry filled with spiced apples.</p>
-                        <span class="menu-price">$2.75</span>
-                    </div>
-                    <div class="menu-item">
-                        <h3 class="menu-item-title">Cherry Danish</h3>
-                        <p>A flaky Danish with a cherry filling.</p>
-                        <span class="menu-price">$3.25</span>
-                    </div>
-                    <div class="menu-item">
-                        <h3 class="menu-item-title">Cinnamon Roll</h3>
-                        <p>Soft roll with a cinnamon sugar swirl and cream cheese frosting.</p>
-                        <span class="menu-price">$3.50</span>
-                    </div>
+                </header>
+                <div class="menu-cards">
+                    <article class="menu-card">
+                        <div class="menu-card__media">
+                            <img src="images/crossaints.jpg" alt="" width="400" height="300" class="menu-card__img">
+                        </div>
+                        <div class="menu-card__body">
+                            <div class="menu-card__row">
+                                <h3 class="menu-card__name">Chocolate croissant</h3>
+                                <span class="menu-card__price">$3.00</span>
+                            </div>
+                            <p class="menu-card__desc">A flaky croissant filled with rich, melted chocolate.</p>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card__media">
+                            <img src="images/muffin.jpg" alt="" width="400" height="300" class="menu-card__img">
+                        </div>
+                        <div class="menu-card__body">
+                            <div class="menu-card__row">
+                                <h3 class="menu-card__name">Blueberry muffin</h3>
+                                <span class="menu-card__price">$2.50</span>
+                            </div>
+                            <p class="menu-card__desc">Soft and moist muffin bursting with fresh blueberries.</p>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card__media menu-card__media--placeholder">
+                            <i class="fa-solid fa-cookie-bite" aria-hidden="true"></i>
+                        </div>
+                        <div class="menu-card__body">
+                            <div class="menu-card__row">
+                                <h3 class="menu-card__name">Scone</h3>
+                                <span class="menu-card__price">$2.00</span>
+                            </div>
+                            <p class="menu-card__desc">Buttery vanilla scone—perfect alongside your coffee.</p>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card__media menu-card__media--placeholder">
+                            <i class="fa-solid fa-apple-whole" aria-hidden="true"></i>
+                        </div>
+                        <div class="menu-card__body">
+                            <div class="menu-card__row">
+                                <h3 class="menu-card__name">Apple turnover</h3>
+                                <span class="menu-card__price">$2.75</span>
+                            </div>
+                            <p class="menu-card__desc">A sweet pastry filled with spiced apples.</p>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card__media menu-card__media--placeholder">
+                            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                        </div>
+                        <div class="menu-card__body">
+                            <div class="menu-card__row">
+                                <h3 class="menu-card__name">Cherry Danish</h3>
+                                <span class="menu-card__price">$3.25</span>
+                            </div>
+                            <p class="menu-card__desc">A flaky Danish with a cherry filling.</p>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card__media menu-card__media--placeholder">
+                            <i class="fa-solid fa-stroopwafel" aria-hidden="true"></i>
+                        </div>
+                        <div class="menu-card__body">
+                            <div class="menu-card__row">
+                                <h3 class="menu-card__name">Cinnamon roll</h3>
+                                <span class="menu-card__price">$3.50</span>
+                            </div>
+                            <p class="menu-card__desc">Soft roll with cinnamon sugar swirl and cream cheese frosting.</p>
+                        </div>
+                    </article>
                 </div>
             </section>
         </div>
