@@ -7,14 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQ9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="page-home">
     <header class="site-hero">
         <div class="hero-orbs" aria-hidden="true"></div>
+        <div class="hero-grain" aria-hidden="true"></div>
         <div class="section-inner hero-top">
-            <a href="index.html" class="logo-link">
+            <a href="index.html" class="logo-link logo-link--hero">
                 <img src="images/logo.png" alt="CozyCup Café home" class="logo">
             </a>
             <nav class="nav-primary nav-primary--glass" aria-label="Main">
@@ -26,31 +27,35 @@
                 </ul>
             </nav>
         </div>
-        <div class="section-inner hero-layout">
+        <div class="section-inner hero-split">
             <div class="hero-copy">
                 <p class="hero-eyebrow"><span class="hero-eyebrow__dot" aria-hidden="true"></span> Neighborhood café · Bean City</p>
-                <h1 class="hero-title">Sip, relax, <span class="hero-title__accent">repeat</span></h1>
-                <p class="hero-tagline">Small-batch espresso, oven-fresh pastries, and a living-room vibe—seven days a week.</p>
+                <h1 class="hero-title hero-title--display">Coffee that feels<br>like <span class="hero-title__accent">slow Sunday</span>.</h1>
+                <p class="hero-tagline">Small-batch espresso, oven-fresh pastries, and a living-room vibe—open early, glowing late, seven days a week.</p>
                 <ul class="hero-chips" aria-label="Highlights">
                     <li>Single-origin beans</li>
                     <li>Plant milks</li>
                     <li>Free Wi‑Fi</li>
                 </ul>
                 <div class="hero-actions">
-                    <a href="menu.html" class="btn btn-hero">Explore the menu</a>
-                    <a href="contact.html" class="btn btn-hero-outline">Plan your visit</a>
+                    <a href="menu.html" class="btn btn-hero"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i> Explore the menu</a>
+                    <a href="contact.html" class="btn btn-hero-outline"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Plan your visit</a>
                 </div>
             </div>
-            <div class="hero-aside" aria-hidden="true">
-                <div class="hero-showcase">
-                    <div class="hero-showcase__ring"></div>
-                    <div class="hero-showcase__card">
-                        <span class="hero-showcase__label">Today’s pick</span>
-                        <strong class="hero-showcase__name">House espresso</strong>
-                        <span class="hero-showcase__price">$5</span>
-                    </div>
-                    <div class="hero-showcase__float hero-showcase__float--a"></div>
-                    <div class="hero-showcase__float hero-showcase__float--b"></div>
+            <div class="hero-media">
+                <figure class="hero-media__frame">
+                    <img src="images/Espresso.png" alt="Glass of house espresso with crema" width="720" height="900" loading="eager">
+                    <figcaption class="visually-hidden">Featured drink: house espresso blend</figcaption>
+                </figure>
+                <div class="hero-float hero-float--pick" aria-hidden="true">
+                    <span class="hero-float__label">Bar pick</span>
+                    <span class="hero-float__title">House espresso</span>
+                    <span class="hero-float__meta">Dense crema · $5</span>
+                </div>
+                <div class="hero-float hero-float--hours" aria-hidden="true">
+                    <span class="hero-float__label">Hours</span>
+                    <span class="hero-float__title">7am – 9pm</span>
+                    <span class="hero-float__meta">Every day · walk-ins OK</span>
                 </div>
             </div>
         </div>
@@ -59,13 +64,65 @@
         </div>
     </header>
 
+    <section class="home-metrics section-inner" aria-label="Quick facts">
+        <div class="home-metrics__grid">
+            <div class="metric-card">
+                <span class="metric-card__value">15+</span>
+                <span class="metric-card__unit">years</span>
+                <p class="metric-card__label">Serving Bean City mornings</p>
+            </div>
+            <div class="metric-card">
+                <span class="metric-card__value">∞</span>
+                <span class="metric-card__unit">refills</span>
+                <p class="metric-card__label">Warm welcomes (not just coffee)</p>
+            </div>
+            <div class="metric-card">
+                <span class="metric-card__value">360°</span>
+                <span class="metric-card__unit">beans</span>
+                <p class="metric-card__label">Ethically sourced, weekly rotation</p>
+            </div>
+        </div>
+    </section>
+
     <main id="main-content">
+        <section class="home-highlights" aria-labelledby="highlights-heading">
+            <div class="section-inner home-highlights__inner">
+                <header class="section-head section-head--row">
+                    <div>
+                        <span class="section-badge">Why we exist</span>
+                        <h2 class="section-title section-title--left" id="highlights-heading">Built for lingering</h2>
+                        <p class="section-lead section-lead--left">Comfortable seating, honest pricing, and a counter crew that remembers your usual.</p>
+                    </div>
+                </header>
+                <ul class="highlight-list">
+                    <li class="highlight-card">
+                        <span class="highlight-card__icon" aria-hidden="true"><i class="fa-solid fa-fire-flame-curved"></i></span>
+                        <h3 class="highlight-card__title">Roasted in small batches</h3>
+                        <p>Chocolate-caramel sweetness without the bitterness—dialed daily on our house machine.</p>
+                    </li>
+                    <li class="highlight-card">
+                        <span class="highlight-card__icon" aria-hidden="true"><i class="fa-solid fa-wheat-awn"></i></span>
+                        <h3 class="highlight-card__title">Pastries from our oven</h3>
+                        <p>Laminated croissants and muffins cooled just enough—still flaky when you unwrap.</p>
+                    </li>
+                    <li class="highlight-card">
+                        <span class="highlight-card__icon" aria-hidden="true"><i class="fa-solid fa-plug"></i></span>
+                        <h3 class="highlight-card__title">Work-friendly tables</h3>
+                        <p>Reliable outlets, soft lighting, and a playlist that stays out of your meeting.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
         <section class="featured-products" aria-labelledby="featured-heading">
             <div class="section-inner">
-                <header class="section-head">
-                    <span class="section-badge">This week</span>
-                    <h2 class="section-title section-title--left" id="featured-heading">Featured on the counter</h2>
-                    <p class="section-lead section-lead--left">Roasted with care, plated with pride—four favorites our regulars order again and again.</p>
+                <header class="section-head section-head--split">
+                    <div>
+                        <span class="section-badge">On the counter</span>
+                        <h2 class="section-title section-title--left" id="featured-heading">This week’s crew favorites</h2>
+                        <p class="section-lead section-lead--left">Four orders our regulars repeat—roasted with care, plated fast enough for lunch breaks.</p>
+                    </div>
+                    <a href="menu.html" class="btn btn-outline-accent">See full menu</a>
                 </header>
                 <div class="products products--bento">
                     <article class="product-card product-card--wide">
@@ -117,20 +174,23 @@
         </section>
 
         <section class="home-cta" aria-labelledby="cta-heading">
-            <div class="section-inner home-cta__inner">
-                <div class="home-cta__copy">
-                    <h2 id="cta-heading" class="home-cta__title">Pull up a chair</h2>
-                    <p class="home-cta__text">We’re on Coffee St. with indoor seating, sidewalk tables, and beans to take home.</p>
-                </div>
-                <div class="home-cta__actions">
-                    <a href="contact.html" class="btn btn-cta-primary">Get directions</a>
-                    <a href="about.html" class="btn btn-cta-ghost">Read our story</a>
+            <div class="section-inner">
+                <div class="home-cta__inner home-cta__inner--modern">
+                    <div class="home-cta__glow" aria-hidden="true"></div>
+                    <div class="home-cta__copy">
+                        <h2 id="cta-heading" class="home-cta__title">Pull up a chair</h2>
+                        <p class="home-cta__text">We’re on Coffee St. with indoor seating, sidewalk tables, and beans to take home.</p>
+                    </div>
+                    <div class="home-cta__actions">
+                        <a href="contact.html" class="btn btn-cta-primary">Get directions</a>
+                        <a href="about.html" class="btn btn-cta-ghost">Read our story</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer--home">
         <div class="footer-container section-inner">
             <div class="footer-contact">
                 <h3>Contact Us</h3>
