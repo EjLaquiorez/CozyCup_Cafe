@@ -30,47 +30,81 @@
     <main class="page-main menu-main">
         <section class="menu-hero" aria-labelledby="menu-heading">
             <div class="menu-hero__texture" aria-hidden="true"></div>
+            <div class="menu-hero__glow" aria-hidden="true"></div>
+            <div class="hero-grain menu-hero__grain" aria-hidden="true"></div>
             <div class="section-inner menu-hero__inner">
-                <p class="menu-hero__eyebrow">Freshly brewed and baked daily</p>
-                <h1 id="menu-heading" class="menu-hero__title">CozyCup menu</h1>
-                <p class="menu-hero__lead">From balanced espresso classics to warm pastries from our oven, everything is prepared in small batches and served all day.</p>
+                <p class="menu-hero__eyebrow"><span class="menu-hero__eyebrow-dot" aria-hidden="true"></span> Freshly brewed &amp; baked daily</p>
+                <h1 id="menu-heading" class="menu-hero__title">Our <span class="menu-hero__title-accent">menu</span></h1>
+                <p class="menu-hero__lead">From balanced espresso classics to warm pastries from our oven—prepared in small batches and served all day.</p>
+                <ul class="menu-hero__chips" aria-label="Highlights">
+                    <li><i class="fa-solid fa-mug-saucer" aria-hidden="true"></i> Single-origin espresso</li>
+                    <li><i class="fa-solid fa-wheat-awn" aria-hidden="true"></i> In-house baking</li>
+                    <li><i class="fa-solid fa-leaf" aria-hidden="true"></i> Plant milks available</li>
+                </ul>
                 <nav class="menu-jump" aria-label="Skip to section">
                     <a class="menu-jump__btn" href="#coffee-menu"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i> Coffee</a>
                     <a class="menu-jump__btn" href="#pastry-menu"><i class="fa-solid fa-croissant" aria-hidden="true"></i> Pastries</a>
                 </nav>
             </div>
+            <div class="menu-hero__wave" aria-hidden="true">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path fill="var(--bg)" d="M0,64 C180,20 360,100 540,64 C720,28 900,100 1080,64 C1260,28 1380,48 1440,40 L1440,120 L0,120 Z"/></svg>
+            </div>
         </section>
+
+        <div class="menu-marquee" aria-hidden="true">
+            <div class="menu-marquee__track">
+                <span><i class="fa-solid fa-mug-hot"></i> Espresso bar</span>
+                <span><i class="fa-solid fa-croissant"></i> Fresh pastries</span>
+                <span><i class="fa-solid fa-seedling"></i> Ethically sourced</span>
+                <span><i class="fa-solid fa-clock"></i> Served all day</span>
+                <span><i class="fa-solid fa-mug-hot"></i> Espresso bar</span>
+                <span><i class="fa-solid fa-croissant"></i> Fresh pastries</span>
+                <span><i class="fa-solid fa-seedling"></i> Ethically sourced</span>
+                <span><i class="fa-solid fa-clock"></i> Served all day</span>
+            </div>
+        </div>
+
+        <nav class="menu-tabs section-inner" aria-label="Menu categories">
+            <a class="menu-tabs__link" href="#coffee-menu"><i class="fa-solid fa-mug-saucer" aria-hidden="true"></i> Coffee &amp; espresso</a>
+            <a class="menu-tabs__link" href="#pastry-menu"><i class="fa-solid fa-croissant" aria-hidden="true"></i> Pastry case</a>
+        </nav>
 
         <div class="section-inner menu-page">
             <section class="menu-board" id="coffee-menu" aria-labelledby="coffee-heading">
                 <header class="menu-board__head">
                     <span class="menu-board__icon" aria-hidden="true"><i class="fa-solid fa-mug-saucer"></i></span>
                     <div>
+                        <span class="section-badge">Drinks</span>
                         <h2 id="coffee-heading" class="menu-board__title">Coffee &amp; espresso</h2>
-                        <p class="menu-board__note">Single-origin espresso · made to order</p>
+                        <p class="menu-board__note">Single-origin espresso · made to order · plant milks on request</p>
                     </div>
                 </header>
-                <div class="menu-cards">
-                    <article class="menu-card">
+                <div class="menu-cards menu-cards--bento">
+                    <article class="menu-card menu-card--featured">
                         <div class="menu-card__media">
-                            <img src="images/Espresso.png" alt="Espresso served in a ceramic cup" width="400" height="300" class="menu-card__img">
+                            <span class="menu-card__badge">House favorite</span>
+                            <img src="images/Espresso.png" alt="Espresso served in a ceramic cup" width="400" height="300" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
+                            <span class="menu-card__tag">Espresso</span>
                             <div class="menu-card__row">
                                 <h3 class="menu-card__name">Espresso</h3>
-                                <span class="menu-card__price">$5.00</span>
+                                <span class="menu-card__leader" aria-hidden="true"></span>
+                                <span class="menu-card__price"><span class="price__currency">$</span>5.00</span>
                             </div>
                             <p class="menu-card__desc">Concentrated and bold, with dark chocolate aroma and a caramel finish.</p>
                         </div>
                     </article>
                     <article class="menu-card">
                         <div class="menu-card__media">
-                            <img src="images/machiatto.jpg" alt="Steamed milk latte with foam art" width="400" height="300" class="menu-card__img">
+                            <img src="images/machiatto.jpg" alt="Steamed milk latte with foam art" width="400" height="300" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
+                            <span class="menu-card__tag">Latte</span>
                             <div class="menu-card__row">
                                 <h3 class="menu-card__name">Vanilla latte</h3>
-                                <span class="menu-card__price">$4.50</span>
+                                <span class="menu-card__leader" aria-hidden="true"></span>
+                                <span class="menu-card__price"><span class="price__currency">$</span>4.50</span>
                             </div>
                             <p class="menu-card__desc">Silky steamed milk and espresso finished with our house vanilla syrup.</p>
                         </div>
@@ -80,33 +114,39 @@
                             <i class="fa-solid fa-cloud" aria-hidden="true"></i>
                         </div>
                         <div class="menu-card__body">
+                            <span class="menu-card__tag">Classic</span>
                             <div class="menu-card__row">
                                 <h3 class="menu-card__name">Cappuccino</h3>
-                                <span class="menu-card__price">$4.75</span>
+                                <span class="menu-card__leader" aria-hidden="true"></span>
+                                <span class="menu-card__price"><span class="price__currency">$</span>4.75</span>
                             </div>
                             <p class="menu-card__desc">Equal parts espresso, steamed milk, and velvety foam for a classic cup.</p>
                         </div>
                     </article>
                     <article class="menu-card">
                         <div class="menu-card__media">
-                            <img src="images/machiatto.jpg" alt="Macchiato with a light milk mark" width="400" height="300" class="menu-card__img">
+                            <img src="images/machiatto.jpg" alt="Macchiato with a light milk mark" width="400" height="300" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
+                            <span class="menu-card__tag">Espresso</span>
                             <div class="menu-card__row">
                                 <h3 class="menu-card__name">Macchiato</h3>
-                                <span class="menu-card__price">$4.00</span>
+                                <span class="menu-card__leader" aria-hidden="true"></span>
+                                <span class="menu-card__price"><span class="price__currency">$</span>4.00</span>
                             </div>
                             <p class="menu-card__desc">A bright espresso shot topped with a touch of steamed milk.</p>
                         </div>
                     </article>
                     <article class="menu-card">
                         <div class="menu-card__media">
-                            <img src="images/Espresso.png" alt="Mocha topped with whipped cream" width="400" height="300" class="menu-card__img">
+                            <img src="images/Espresso.png" alt="Mocha topped with whipped cream" width="400" height="300" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
+                            <span class="menu-card__tag">Specialty</span>
                             <div class="menu-card__row">
                                 <h3 class="menu-card__name">Mocha</h3>
-                                <span class="menu-card__price">$5.50</span>
+                                <span class="menu-card__leader" aria-hidden="true"></span>
+                                <span class="menu-card__price"><span class="price__currency">$</span>5.50</span>
                             </div>
                             <p class="menu-card__desc">Espresso blended with chocolate and milk, topped with fresh whipped cream.</p>
                         </div>
@@ -116,9 +156,11 @@
                             <i class="fa-solid fa-droplet" aria-hidden="true"></i>
                         </div>
                         <div class="menu-card__body">
+                            <span class="menu-card__tag">Classic</span>
                             <div class="menu-card__row">
                                 <h3 class="menu-card__name">Americano</h3>
-                                <span class="menu-card__price">$4.25</span>
+                                <span class="menu-card__leader" aria-hidden="true"></span>
+                                <span class="menu-card__price"><span class="price__currency">$</span>4.25</span>
                             </div>
                             <p class="menu-card__desc">Espresso lengthened with hot water for a smooth and mellow finish.</p>
                         </div>
@@ -130,31 +172,37 @@
                 <header class="menu-board__head">
                     <span class="menu-board__icon" aria-hidden="true"><i class="fa-solid fa-croissant"></i></span>
                     <div>
+                        <span class="section-badge">Baked goods</span>
                         <h2 id="pastry-heading" class="menu-board__title">Pastry case</h2>
                         <p class="menu-board__note">Baked in-house each morning · available while supplies last</p>
                     </div>
                 </header>
-                <div class="menu-cards">
-                    <article class="menu-card">
+                <div class="menu-cards menu-cards--bento">
+                    <article class="menu-card menu-card--featured">
                         <div class="menu-card__media">
-                            <img src="images/crossaints.jpg" alt="Chocolate croissant on a wooden plate" width="400" height="300" class="menu-card__img">
+                            <span class="menu-card__badge">Best seller</span>
+                            <img src="images/crossaints.jpg" alt="Chocolate croissant on a wooden plate" width="400" height="300" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
+                            <span class="menu-card__tag">Pastry</span>
                             <div class="menu-card__row">
                                 <h3 class="menu-card__name">Chocolate croissant</h3>
-                                <span class="menu-card__price">$3.00</span>
+                                <span class="menu-card__leader" aria-hidden="true"></span>
+                                <span class="menu-card__price"><span class="price__currency">$</span>3.00</span>
                             </div>
                             <p class="menu-card__desc">Laminated pastry filled with dark chocolate and baked until golden.</p>
                         </div>
                     </article>
                     <article class="menu-card">
                         <div class="menu-card__media">
-                            <img src="images/muffin.jpg" alt="Blueberry muffin with crumble top" width="400" height="300" class="menu-card__img">
+                            <img src="images/muffin.jpg" alt="Blueberry muffin with crumble top" width="400" height="300" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
+                            <span class="menu-card__tag">Muffin</span>
                             <div class="menu-card__row">
                                 <h3 class="menu-card__name">Blueberry muffin</h3>
-                                <span class="menu-card__price">$2.50</span>
+                                <span class="menu-card__leader" aria-hidden="true"></span>
+                                <span class="menu-card__price"><span class="price__currency">$</span>2.50</span>
                             </div>
                             <p class="menu-card__desc">Moist vanilla batter loaded with blueberries and a crisp sugar top.</p>
                         </div>
@@ -164,9 +212,11 @@
                             <i class="fa-solid fa-cookie-bite" aria-hidden="true"></i>
                         </div>
                         <div class="menu-card__body">
+                            <span class="menu-card__tag">Scone</span>
                             <div class="menu-card__row">
                                 <h3 class="menu-card__name">Vanilla scone</h3>
-                                <span class="menu-card__price">$2.00</span>
+                                <span class="menu-card__leader" aria-hidden="true"></span>
+                                <span class="menu-card__price"><span class="price__currency">$</span>2.00</span>
                             </div>
                             <p class="menu-card__desc">Buttery and lightly sweet, ideal with jam or your favorite brew.</p>
                         </div>
@@ -176,9 +226,11 @@
                             <i class="fa-solid fa-apple-whole" aria-hidden="true"></i>
                         </div>
                         <div class="menu-card__body">
+                            <span class="menu-card__tag">Pastry</span>
                             <div class="menu-card__row">
                                 <h3 class="menu-card__name">Apple turnover</h3>
-                                <span class="menu-card__price">$2.75</span>
+                                <span class="menu-card__leader" aria-hidden="true"></span>
+                                <span class="menu-card__price"><span class="price__currency">$</span>2.75</span>
                             </div>
                             <p class="menu-card__desc">Flaky pastry folded around cinnamon-spiced apple filling.</p>
                         </div>
@@ -188,9 +240,11 @@
                             <i class="fa-solid fa-heart" aria-hidden="true"></i>
                         </div>
                         <div class="menu-card__body">
+                            <span class="menu-card__tag">Danish</span>
                             <div class="menu-card__row">
                                 <h3 class="menu-card__name">Cherry Danish</h3>
-                                <span class="menu-card__price">$3.25</span>
+                                <span class="menu-card__leader" aria-hidden="true"></span>
+                                <span class="menu-card__price"><span class="price__currency">$</span>3.25</span>
                             </div>
                             <p class="menu-card__desc">Soft Danish layers topped with sweet cherry compote and glaze.</p>
                         </div>
@@ -200,13 +254,29 @@
                             <i class="fa-solid fa-stroopwafel" aria-hidden="true"></i>
                         </div>
                         <div class="menu-card__body">
+                            <span class="menu-card__tag">Roll</span>
                             <div class="menu-card__row">
                                 <h3 class="menu-card__name">Cinnamon roll</h3>
-                                <span class="menu-card__price">$3.50</span>
+                                <span class="menu-card__leader" aria-hidden="true"></span>
+                                <span class="menu-card__price"><span class="price__currency">$</span>3.50</span>
                             </div>
                             <p class="menu-card__desc">Soft spiraled dough with cinnamon sugar and cream cheese frosting.</p>
                         </div>
                     </article>
+                </div>
+            </section>
+
+            <section class="menu-cta" aria-labelledby="menu-cta-heading">
+                <div class="menu-cta__inner">
+                    <div class="menu-cta__copy">
+                        <span class="menu-cta__badge"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Walk-ins welcome</span>
+                        <h2 id="menu-cta-heading" class="menu-cta__title">Ready for your usual?</h2>
+                        <p class="menu-cta__text">Pull up a chair, order at the counter, and we'll have your drink up before the playlist changes.</p>
+                    </div>
+                    <div class="menu-cta__actions">
+                        <a href="contact.html" class="btn btn-cta-primary"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i> Plan your visit</a>
+                        <a href="index.html" class="btn btn-cta-ghost">Back to home</a>
+                    </div>
                 </div>
             </section>
         </div>
