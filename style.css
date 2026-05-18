@@ -2969,3 +2969,298 @@ body {
         gap: 0.4rem;
     }
 }
+
+/* ——— Home UX: skip link, mobile nav, scroll polish ——— */
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0.75rem;
+    z-index: 300;
+    padding: 0.55rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    background: var(--accent);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-md);
+}
+
+.skip-link:focus {
+    left: 0.75rem;
+    outline: 2px solid var(--hero-text);
+    outline-offset: 3px;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-left: auto;
+    padding: 0;
+    border: 1px solid rgba(255, 248, 240, 0.28);
+    border-radius: var(--radius-sm);
+    background: rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.nav-toggle:hover {
+    background: rgba(0, 0, 0, 0.38);
+    border-color: rgba(255, 248, 240, 0.45);
+}
+
+.nav-toggle:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+.nav-toggle__bar {
+    display: block;
+    width: 1.15rem;
+    height: 2px;
+    margin-inline: auto;
+    background: var(--hero-text);
+    border-radius: 1px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.page-home .hero-top {
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .page-home .hero-top {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .nav-toggle {
+        display: flex;
+        flex-shrink: 0;
+    }
+
+    .page-home .hero-top .nav-primary--glass {
+        position: absolute;
+        top: calc(100% + 0.5rem);
+        left: var(--space-md);
+        right: var(--space-md);
+        z-index: 50;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-6px);
+        transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+    }
+
+    .page-home .hero-top .nav-primary--glass.is-open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .page-home .hero-top .nav-primary--glass ul {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: var(--radius-lg);
+    }
+
+    .page-home .hero-top .nav-primary--glass a {
+        display: block;
+        text-align: center;
+        padding: 0.65rem 1rem;
+    }
+
+    body.nav-open::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: 40;
+        background: rgba(22, 18, 15, 0.45);
+        backdrop-filter: blur(2px);
+    }
+}
+
+.home-sticky-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 120;
+    padding: 0.5rem 0;
+    background: rgba(253, 252, 249, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(45, 36, 29, 0.08);
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+body.home-scrolled .home-sticky-bar {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.home-sticky-bar__inner {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.home-sticky-bar .logo--compact {
+    width: 48px;
+    background-color: rgba(0, 0, 0, 0.06);
+    border-color: rgba(183, 112, 47, 0.45);
+}
+
+.home-sticky-bar .nav-primary ul {
+    gap: 0.15rem;
+}
+
+.home-sticky-bar .nav-primary a {
+    color: var(--text);
+    font-size: 0.88rem;
+    padding: 0.4rem 0.65rem;
+}
+
+.home-sticky-bar .nav-primary a:hover,
+.home-sticky-bar .nav-primary a[aria-current="page"] {
+    color: var(--accent-hover);
+    background: rgba(183, 112, 47, 0.1);
+}
+
+.home-sticky-bar__cta {
+    margin-left: auto;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+    .home-sticky-bar .nav-primary {
+        display: none;
+    }
+
+    .home-sticky-bar__cta {
+        margin-left: auto;
+    }
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(1.25rem);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal.is-visible .highlight-card {
+    animation: reveal-card 0.5s ease forwards;
+}
+
+.reveal.is-visible .highlight-card:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.reveal.is-visible .highlight-card:nth-child(2) {
+    animation-delay: 0.12s;
+}
+
+.reveal.is-visible .highlight-card:nth-child(3) {
+    animation-delay: 0.19s;
+}
+
+@keyframes reveal-card {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal.is-visible .highlight-card {
+    opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .reveal.is-visible {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .reveal.is-visible .highlight-card {
+        animation: none;
+        opacity: 1;
+    }
+
+    .home-sticky-bar {
+        transition: none;
+    }
+}
+
+.product-card--interactive {
+    position: relative;
+    cursor: pointer;
+}
+
+.product-card__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    border-radius: inherit;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.product-card--interactive .product-card__footer {
+    position: relative;
+    z-index: 3;
+}
+
+.product-card--interactive:focus-within {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+.metric-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(183, 112, 47, 0.2);
+}
+
+::selection {
+    background: rgba(183, 112, 47, 0.25);
+    color: var(--espresso);
+}

@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CozyCup Café</title>
+    <meta name="description" content="CozyCup Café in Bean City—small-batch espresso, oven-fresh pastries, and a living-room vibe. Open daily 7am–8pm.">
+    <meta name="theme-color" content="#2d241d">
+    <title>CozyCup Café — Coffee &amp; Pastries in Bean City</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
@@ -11,6 +13,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="page-home">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="home-sticky-bar" id="home-sticky-bar" hidden>
+        <div class="section-inner home-sticky-bar__inner">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="CozyCup Café home" class="logo logo--compact" width="48" height="48">
+            </a>
+            <nav class="nav-primary" aria-label="Main">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="menu.html" class="btn btn-hero home-sticky-bar__cta">Menu</a>
+        </div>
+    </div>
+
     <header class="site-hero home-hero" id="top">
         <div class="home-hero__texture" aria-hidden="true"></div>
         <div class="home-hero__glow" aria-hidden="true"></div>
@@ -20,7 +41,12 @@
             <a href="index.html" class="logo-link logo-link--hero">
                 <img src="images/logo.png" alt="CozyCup Café home" class="logo">
             </a>
-            <nav class="nav-primary nav-primary--glass" aria-label="Main">
+            <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-main" aria-label="Open menu">
+                <span class="nav-toggle__bar" aria-hidden="true"></span>
+                <span class="nav-toggle__bar" aria-hidden="true"></span>
+                <span class="nav-toggle__bar" aria-hidden="true"></span>
+            </button>
+            <nav class="nav-primary nav-primary--glass" id="nav-main" aria-label="Main">
                 <ul>
                     <li><a href="index.html" aria-current="page">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
@@ -75,7 +101,7 @@
         </div>
     </header>
 
-    <section class="home-metrics section-inner" aria-label="Quick facts">
+    <section class="home-metrics section-inner reveal" aria-label="Quick facts">
         <div class="home-metrics__grid">
             <article class="metric-card">
                 <span class="metric-card__icon" aria-hidden="true"><i class="fa-solid fa-mug-hot"></i></span>
@@ -112,7 +138,7 @@
     </div>
 
     <main id="main-content">
-        <section class="home-highlights" id="highlights" aria-labelledby="highlights-heading">
+        <section class="home-highlights reveal" id="highlights" aria-labelledby="highlights-heading">
             <div class="section-inner home-highlights__inner">
                 <header class="section-head section-head--split">
                     <div>
@@ -142,7 +168,7 @@
             </div>
         </section>
 
-        <section class="featured-products" id="featured" aria-labelledby="featured-heading">
+        <section class="featured-products reveal" id="featured" aria-labelledby="featured-heading">
             <div class="section-inner">
                 <header class="section-head section-head--split">
                     <div>
@@ -153,11 +179,12 @@
                     <a href="menu.html" class="btn btn-outline-accent">See full menu</a>
                 </header>
                 <div class="products products--bento">
-                    <article class="product-card product-card--wide product-card--featured">
+                    <article class="product-card product-card--wide product-card--featured product-card--interactive">
                         <div class="product-card__media">
                             <span class="product-card__badge">Staff pick</span>
                             <img src="images/Espresso.png" alt="Glass of espresso with crema" loading="lazy" width="800" height="600">
                         </div>
+                        <a href="menu.html" class="product-card__overlay" aria-label="View espresso blend on menu"></a>
                         <div class="product-card__body">
                             <span class="product-card__tag">Coffee</span>
                             <h3>Espresso blend</h3>
@@ -168,7 +195,8 @@
                             </div>
                         </div>
                     </article>
-                    <article class="product-card">
+                    <article class="product-card product-card--interactive">
+                        <a href="menu.html" class="product-card__overlay" aria-label="View latte macchiato on menu"></a>
                         <div class="product-card__media">
                             <img src="images/machiatto.jpg" alt="Latte macchiato in a glass mug" loading="lazy" width="600" height="450">
                         </div>
@@ -182,7 +210,8 @@
                             </div>
                         </div>
                     </article>
-                    <article class="product-card">
+                    <article class="product-card product-card--interactive">
+                        <a href="menu.html" class="product-card__overlay" aria-label="View chocolate croissant on menu"></a>
                         <div class="product-card__media">
                             <img src="images/crossaints.jpg" alt="Chocolate croissant on a plate" loading="lazy" width="600" height="450">
                         </div>
@@ -196,7 +225,8 @@
                             </div>
                         </div>
                     </article>
-                    <article class="product-card">
+                    <article class="product-card product-card--interactive">
+                        <a href="menu.html" class="product-card__overlay" aria-label="View blueberry muffin on menu"></a>
                         <div class="product-card__media">
                             <img src="images/muffin.jpg" alt="Blueberry muffin with visible berries" loading="lazy" width="600" height="450">
                         </div>
@@ -214,7 +244,7 @@
             </div>
         </section>
 
-        <section class="home-quote" aria-label="Guest note">
+        <section class="home-quote reveal" aria-label="Guest note">
             <div class="section-inner">
                 <blockquote class="home-quote__card">
                     <p class="home-quote__text">“The kind of café where you open your laptop for twenty minutes and stay two hours.”</p>
@@ -223,7 +253,7 @@
             </div>
         </section>
 
-        <section class="home-cta" id="visit" aria-labelledby="cta-heading">
+        <section class="home-cta reveal" id="visit" aria-labelledby="cta-heading">
             <div class="section-inner">
                 <div class="home-cta__inner home-cta__inner--modern">
                     <div class="home-cta__glow" aria-hidden="true"></div>
@@ -276,5 +306,6 @@
         </div>
         <p class="footer-bottom section-inner">© 2026 CozyCup Café · Crafted with care in Bean City</p>
     </footer>
+    <script src="main.js" defer></script>
 </body>
 </html>
