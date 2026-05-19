@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CozyCup Café in Bean City—small-batch espresso, oven-fresh pastries, and a living-room vibe. Open daily 7am–8pm.">
+    <meta name="description" content="CozyCup Café in Bean City—small-batch espresso, fresh pastries, and a welcoming neighborhood vibe. Open daily 7am–8pm.">
     <meta name="theme-color" content="#2d241d">
     <title>CozyCup Café — Coffee &amp; Pastries in Bean City</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,34 +12,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="page-home">
+<body class="page-home page-landing">
     <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <div class="home-sticky-bar" id="home-sticky-bar" hidden>
-        <div class="section-inner home-sticky-bar__inner">
-            <a href="index.html" class="logo-link">
-                <img src="images/logo.png" alt="CozyCup Café home" class="logo logo--compact" width="48" height="48">
-            </a>
-            <nav class="nav-primary" aria-label="Main">
-                <ul>
-                    <li><a href="index.html" aria-current="page">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <a href="menu.html" class="btn btn-hero home-sticky-bar__cta">Menu</a>
-        </div>
-    </div>
-
-    <header class="site-hero home-hero" id="top">
+    <header class="site-hero landing-hero" id="top">
         <div class="home-hero__texture" aria-hidden="true"></div>
         <div class="home-hero__glow" aria-hidden="true"></div>
-        <div class="hero-orbs" aria-hidden="true"></div>
         <div class="hero-grain" aria-hidden="true"></div>
-        <div class="section-inner hero-top">
+
+        <div class="section-inner landing-hero__top">
             <a href="index.html" class="logo-link logo-link--hero">
-                <img src="images/logo.png" alt="CozyCup Café home" class="logo">
+                <img src="images/logo.png" alt="CozyCup Café home" class="logo" width="88" height="88">
             </a>
             <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-main" aria-label="Open menu">
                 <span class="nav-toggle__bar" aria-hidden="true"></span>
@@ -50,261 +33,128 @@
                 <ul>
                     <li><a href="index.html" aria-current="page">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="section-inner hero-split">
+
+        <div class="section-inner landing-hero__body">
             <div class="hero-copy">
-                <p class="hero-eyebrow"><span class="hero-eyebrow__dot" aria-hidden="true"></span> Neighborhood café · Bean City</p>
-                <h1 class="hero-title hero-title--display">Coffee that feels<br>like <span class="hero-title__accent">slow Sunday</span>.</h1>
-                <p class="hero-tagline">Small-batch espresso, oven-fresh pastries, and a living-room vibe—open early, glowing late, seven days a week.</p>
-                <ul class="hero-chips" aria-label="Highlights">
-                    <li><i class="fa-solid fa-seedling" aria-hidden="true"></i> Single-origin beans</li>
-                    <li><i class="fa-solid fa-leaf" aria-hidden="true"></i> Plant milks</li>
-                    <li><i class="fa-solid fa-wifi" aria-hidden="true"></i> Free Wi‑Fi</li>
-                </ul>
+                <p class="hero-eyebrow"><span class="hero-eyebrow__dot" aria-hidden="true"></span> Bean City · Est. 2010</p>
+                <h1 class="hero-title hero-title--display">Your corner café for <span class="hero-title__accent">slow mornings</span>.</h1>
+                <p class="hero-tagline">Espresso pulled with care, pastries from our oven, and a seat that feels like home—open every day from 7 to 8.</p>
                 <div class="hero-actions">
-                    <a href="menu.html" class="btn btn-hero"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i> Explore the menu</a>
-                    <a href="contact.html" class="btn btn-hero-outline"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Plan your visit</a>
-                </div>
-                <nav class="home-hero__jump" aria-label="Jump to section">
-                    <a class="home-hero__jump-link" href="#highlights">Why visit</a>
-                    <a class="home-hero__jump-link" href="#featured">Favorites</a>
-                    <a class="home-hero__jump-link" href="#visit">Visit us</a>
-                </nav>
-            </div>
-            <div class="hero-media">
-                <figure class="hero-media__frame">
-                    <img src="images/Espresso.png" alt="Glass of house espresso with crema" width="720" height="900" loading="eager">
-                    <figcaption class="visually-hidden">Featured drink: house espresso blend</figcaption>
-                </figure>
-                <div class="hero-float hero-float--pick">
-                    <span class="hero-float__label">Bar pick</span>
-                    <span class="hero-float__title">House espresso</span>
-                    <span class="hero-float__meta">Dense crema · $5</span>
-                </div>
-                <div class="hero-float hero-float--hours">
-                    <span class="hero-float__label">Hours</span>
-                    <span class="hero-float__title">7am – 8pm</span>
-                    <span class="hero-float__meta">Every day · walk-ins OK</span>
+                    <a href="menu.html" class="btn btn-hero"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i> View menu</a>
+                    <a href="contact.html" class="btn btn-hero-outline">Visit us</a>
                 </div>
             </div>
+            <figure class="landing-hero__visual">
+                <img src="images/Espresso.png" alt="House espresso with rich crema" width="560" height="700" loading="eager">
+            </figure>
         </div>
-        <a href="#highlights" class="home-hero__scroll" aria-label="Scroll to content">
-            <span class="home-hero__scroll-text">Discover</span>
-            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-        </a>
+
         <div class="hero-wave" aria-hidden="true">
             <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path fill="var(--surface)" d="M0,64 C180,20 360,100 540,64 C720,28 900,100 1080,64 C1260,28 1380,48 1440,40 L1440,120 L0,120 Z"/></svg>
         </div>
     </header>
 
-    <section class="home-metrics section-inner reveal" aria-label="Quick facts">
-        <div class="home-metrics__grid">
-            <article class="metric-card">
-                <span class="metric-card__icon" aria-hidden="true"><i class="fa-solid fa-mug-hot"></i></span>
-                <span class="metric-card__value">15+</span>
-                <span class="metric-card__unit">years</span>
-                <p class="metric-card__label">Serving Bean City mornings</p>
-            </article>
-            <article class="metric-card">
-                <span class="metric-card__icon" aria-hidden="true"><i class="fa-solid fa-heart"></i></span>
-                <span class="metric-card__value">∞</span>
-                <span class="metric-card__unit">refills</span>
-                <p class="metric-card__label">Warm welcomes (not just coffee)</p>
-            </article>
-            <article class="metric-card">
-                <span class="metric-card__icon" aria-hidden="true"><i class="fa-solid fa-earth-americas"></i></span>
-                <span class="metric-card__value">360°</span>
-                <span class="metric-card__unit">beans</span>
-                <p class="metric-card__label">Ethically sourced, weekly rotation</p>
-            </article>
-        </div>
-    </section>
+    <main id="main-content" class="landing-main">
+        <section class="landing-features section-inner" aria-labelledby="features-heading">
+            <header class="landing-section-head">
+                <h2 id="features-heading" class="section-title">Why locals love us</h2>
+                <p class="section-lead section-lead--dark">Three simple reasons to make CozyCup part of your routine.</p>
+            </header>
+            <ul class="highlight-list">
+                <li class="highlight-card">
+                    <span class="highlight-card__icon" aria-hidden="true"><i class="fa-solid fa-mug-hot"></i></span>
+                    <h3 class="highlight-card__title">Honest espresso</h3>
+                    <p>Small-batch beans, dialed daily—rich, smooth, never burnt.</p>
+                </li>
+                <li class="highlight-card">
+                    <span class="highlight-card__icon" aria-hidden="true"><i class="fa-solid fa-croissant"></i></span>
+                    <h3 class="highlight-card__title">Fresh from the oven</h3>
+                    <p>Croissants and muffins baked each morning, still warm at lunch.</p>
+                </li>
+                <li class="highlight-card">
+                    <span class="highlight-card__icon" aria-hidden="true"><i class="fa-solid fa-couch"></i></span>
+                    <h3 class="highlight-card__title">Room to linger</h3>
+                    <p>Soft light, free Wi‑Fi, and a playlist that stays in the background.</p>
+                </li>
+            </ul>
+        </section>
 
-    <div class="home-marquee" aria-hidden="true">
-        <div class="home-marquee__track">
-            <span><i class="fa-solid fa-star"></i> Small-batch roasted</span>
-            <span><i class="fa-solid fa-mug-saucer"></i> Specialty espresso</span>
-            <span><i class="fa-solid fa-croissant"></i> Oven-fresh pastries</span>
-            <span><i class="fa-solid fa-plug"></i> Work-friendly seating</span>
-            <span><i class="fa-solid fa-seedling"></i> Ethically sourced</span>
-            <span><i class="fa-solid fa-star"></i> Small-batch roasted</span>
-            <span><i class="fa-solid fa-mug-saucer"></i> Specialty espresso</span>
-            <span><i class="fa-solid fa-croissant"></i> Oven-fresh pastries</span>
-        </div>
-    </div>
-
-    <main id="main-content">
-        <section class="home-highlights reveal" id="highlights" aria-labelledby="highlights-heading">
-            <div class="section-inner home-highlights__inner">
-                <header class="section-head section-head--split">
-                    <div>
-                        <span class="section-badge">Why we exist</span>
-                        <h2 class="section-title section-title--left" id="highlights-heading">Built for lingering</h2>
-                        <p class="section-lead section-lead--left section-lead--dark">Comfortable seating, honest pricing, and a counter crew that remembers your usual.</p>
+        <section class="landing-menu section-inner" aria-labelledby="menu-heading">
+            <header class="landing-section-head">
+                <h2 id="menu-heading" class="section-title">Crowd favorites</h2>
+                <p class="section-lead section-lead--dark">Start here, then explore the full menu.</p>
+            </header>
+            <div class="landing-menu__grid">
+                <article class="landing-menu-card">
+                    <img src="images/Espresso.png" alt="Espresso blend" loading="lazy" width="400" height="300">
+                    <div class="landing-menu-card__body">
+                        <h3>Espresso blend</h3>
+                        <p>Chocolate &amp; caramel notes</p>
+                        <span class="price"><span class="price__currency">$</span>5.00</span>
                     </div>
-                    <a href="about.html" class="btn btn-outline-accent">Our story</a>
-                </header>
-                <ul class="highlight-list">
-                    <li class="highlight-card">
-                        <span class="highlight-card__icon" aria-hidden="true"><i class="fa-solid fa-fire-flame-curved"></i></span>
-                        <h3 class="highlight-card__title">Roasted in small batches</h3>
-                        <p>Chocolate-caramel sweetness without the bitterness—dialed daily on our house machine.</p>
-                    </li>
-                    <li class="highlight-card">
-                        <span class="highlight-card__icon" aria-hidden="true"><i class="fa-solid fa-wheat-awn"></i></span>
-                        <h3 class="highlight-card__title">Pastries from our oven</h3>
-                        <p>Laminated croissants and muffins cooled just enough—still flaky when you unwrap.</p>
-                    </li>
-                    <li class="highlight-card">
-                        <span class="highlight-card__icon" aria-hidden="true"><i class="fa-solid fa-plug"></i></span>
-                        <h3 class="highlight-card__title">Work-friendly tables</h3>
-                        <p>Reliable outlets, soft lighting, and a playlist that stays out of your meeting.</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="featured-products reveal" id="featured" aria-labelledby="featured-heading">
-            <div class="section-inner">
-                <header class="section-head section-head--split">
-                    <div>
-                        <span class="section-badge">On the counter</span>
-                        <h2 class="section-title section-title--left" id="featured-heading">This week's crew favorites</h2>
-                        <p class="section-lead section-lead--left section-lead--dark">Four orders our regulars repeat—roasted with care, plated fast enough for lunch breaks.</p>
+                </article>
+                <article class="landing-menu-card">
+                    <img src="images/machiatto.jpg" alt="Latte macchiato" loading="lazy" width="400" height="300">
+                    <div class="landing-menu-card__body">
+                        <h3>Latte macchiato</h3>
+                        <p>Smooth, lightly sweet</p>
+                        <span class="price"><span class="price__currency">$</span>4.50</span>
                     </div>
-                    <a href="menu.html" class="btn btn-outline-accent">See full menu</a>
-                </header>
-                <div class="products products--bento">
-                    <article class="product-card product-card--wide product-card--featured product-card--interactive">
-                        <div class="product-card__media">
-                            <span class="product-card__badge">Staff pick</span>
-                            <img src="images/Espresso.png" alt="Glass of espresso with crema" loading="lazy" width="800" height="600">
-                        </div>
-                        <a href="menu.html" class="product-card__overlay" aria-label="View espresso blend on menu"></a>
-                        <div class="product-card__body">
-                            <span class="product-card__tag">Coffee</span>
-                            <h3>Espresso blend</h3>
-                            <p>A rich and bold espresso blend with notes of chocolate and caramel.</p>
-                            <div class="product-card__footer">
-                                <span class="price"><span class="price__currency">$</span>5.00</span>
-                                <a href="menu.html" class="product-card__link">View on menu <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card product-card--interactive">
-                        <a href="menu.html" class="product-card__overlay" aria-label="View latte macchiato on menu"></a>
-                        <div class="product-card__media">
-                            <img src="images/machiatto.jpg" alt="Latte macchiato in a glass mug" loading="lazy" width="600" height="450">
-                        </div>
-                        <div class="product-card__body">
-                            <span class="product-card__tag">Coffee</span>
-                            <h3>Latte macchiato</h3>
-                            <p>Smooth and creamy with a hint of vanilla, perfect for your morning start.</p>
-                            <div class="product-card__footer">
-                                <span class="price"><span class="price__currency">$</span>4.50</span>
-                                <a href="menu.html" class="product-card__link">View <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card product-card--interactive">
-                        <a href="menu.html" class="product-card__overlay" aria-label="View chocolate croissant on menu"></a>
-                        <div class="product-card__media">
-                            <img src="images/crossaints.jpg" alt="Chocolate croissant on a plate" loading="lazy" width="600" height="450">
-                        </div>
-                        <div class="product-card__body">
-                            <span class="product-card__tag">Pastry</span>
-                            <h3>Chocolate croissant</h3>
-                            <p>A flaky croissant filled with rich, melted chocolate.</p>
-                            <div class="product-card__footer">
-                                <span class="price"><span class="price__currency">$</span>3.00</span>
-                                <a href="menu.html" class="product-card__link">View <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card product-card--interactive">
-                        <a href="menu.html" class="product-card__overlay" aria-label="View blueberry muffin on menu"></a>
-                        <div class="product-card__media">
-                            <img src="images/muffin.jpg" alt="Blueberry muffin with visible berries" loading="lazy" width="600" height="450">
-                        </div>
-                        <div class="product-card__body">
-                            <span class="product-card__tag">Pastry</span>
-                            <h3>Blueberry muffin</h3>
-                            <p>Soft and moist muffin bursting with fresh blueberries.</p>
-                            <div class="product-card__footer">
-                                <span class="price"><span class="price__currency">$</span>2.50</span>
-                                <a href="menu.html" class="product-card__link">View <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+                </article>
+                <article class="landing-menu-card">
+                    <img src="images/crossaints.jpg" alt="Chocolate croissant" loading="lazy" width="400" height="300">
+                    <div class="landing-menu-card__body">
+                        <h3>Chocolate croissant</h3>
+                        <p>Flaky, rich, irresistible</p>
+                        <span class="price"><span class="price__currency">$</span>3.00</span>
+                    </div>
+                </article>
             </div>
+            <p class="landing-menu__cta">
+                <a href="menu.html" class="btn btn-outline-accent">See full menu</a>
+            </p>
         </section>
 
-        <section class="home-quote reveal" aria-label="Guest note">
-            <div class="section-inner">
-                <blockquote class="home-quote__card">
-                    <p class="home-quote__text">“The kind of café where you open your laptop for twenty minutes and stay two hours.”</p>
-                    <footer class="home-quote__cite">— Regular at CozyCup</footer>
-                </blockquote>
-            </div>
-        </section>
-
-        <section class="home-cta reveal" id="visit" aria-labelledby="cta-heading">
+        <section class="landing-visit" aria-labelledby="visit-heading">
             <div class="section-inner">
                 <div class="home-cta__inner home-cta__inner--modern">
-                    <div class="home-cta__glow" aria-hidden="true"></div>
                     <div class="home-cta__copy">
-                        <span class="home-cta__badge"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Bean City · BC</span>
-                        <h2 id="cta-heading" class="home-cta__title">Pull up a chair</h2>
-                        <p class="home-cta__text">We're on Coffee St. with indoor seating, sidewalk tables, and beans to take home.</p>
-                        <ul class="home-cta__meta">
-                            <li><i class="fa-solid fa-clock" aria-hidden="true"></i> 7:00 AM – 8:00 PM daily</li>
-                            <li><i class="fa-solid fa-paw" aria-hidden="true"></i> Patio-friendly</li>
-                        </ul>
+                        <h2 id="visit-heading" class="home-cta__title">We're on Coffee St.</h2>
+                        <p class="home-cta__text">Walk-ins welcome · patio seating · beans to take home.</p>
+                        <p class="landing-visit__hours"><i class="fa-solid fa-clock" aria-hidden="true"></i> Open daily 7:00 AM – 8:00 PM</p>
                     </div>
                     <div class="home-cta__actions">
-                        <a href="contact.html" class="btn btn-cta-primary"><i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i> Get directions</a>
-                        <a href="about.html" class="btn btn-cta-ghost">Read our story</a>
+                        <a href="contact.html" class="btn btn-cta-primary">Get directions</a>
+                        <a href="about.html" class="btn btn-cta-ghost">Our story</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer footer--home">
+    <footer class="footer footer--home footer--landing">
         <div class="footer-container section-inner">
             <div class="footer-brand">
-                <img src="images/logo.png" alt="" class="footer-brand__logo" width="72" height="72">
+                <img src="images/logo.png" alt="" class="footer-brand__logo" width="64" height="64">
                 <p class="footer-brand__tagline">Warm cups, slow mornings, and a seat waiting for you.</p>
             </div>
             <div class="footer-contact">
-                <h3>Contact Us</h3>
-                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 123 Coffee St, Bean City, BC 12345</p>
+                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 123 Coffee St, Bean City</p>
                 <p><i class="fas fa-phone-alt" aria-hidden="true"></i> (123) 456-7890</p>
-                <p><i class="fas fa-envelope" aria-hidden="true"></i> info@cozycup.com</p>
             </div>
             <div class="footer-social">
-                <h3>Follow Us</h3>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/yourprofile" class="social-icon" title="Facebook" target="_blank" rel="noopener noreferrer"><img src="images/fb.png" alt="Facebook"></a>
-                    <a href="https://twitter.com/yourprofile" class="social-icon" title="Twitter" target="_blank" rel="noopener noreferrer"><img src="images/twitter.png" alt="Twitter"></a>
                     <a href="https://www.instagram.com/yourprofile" class="social-icon" title="Instagram" target="_blank" rel="noopener noreferrer"><img src="images/insta.png" alt="Instagram"></a>
-                    <a href="https://www.youtube.com/c/yourchannel" class="social-icon" title="YouTube" target="_blank" rel="noopener noreferrer"><img src="images/youtube.png" alt="YouTube"></a>
+                    <a href="https://www.facebook.com/yourprofile" class="social-icon" title="Facebook" target="_blank" rel="noopener noreferrer"><img src="images/fb.png" alt="Facebook"></a>
                 </div>
             </div>
-            <div class="footer-newsletter">
-                <h3>Subscribe to Our Newsletter</h3>
-                <form action="#" method="post">
-                    <input type="email" name="email" placeholder="Enter your email" required autocomplete="email">
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
         </div>
-        <p class="footer-bottom section-inner">© 2026 CozyCup Café · Crafted with care in Bean City</p>
+        <p class="footer-bottom section-inner">© 2026 CozyCup Café</p>
     </footer>
     <script src="main.js" defer></script>
 </body>
