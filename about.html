@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the people behind CozyCup Café — a neighborhood coffee shop in Bean City since 2010, built on community, sustainability, and great coffee.">
+    <meta name="theme-color" content="#2d241d">
     <title>About — CozyCup Café</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,92 +12,215 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-about">
     <header class="site-header">
         <div class="section-inner navbar">
             <a href="index.html" class="logo-link">
-                <img src="images/logo.png" alt="CozyCup Café home" class="logo">
+                <img src="images/logo.png" alt="CozyCup Café home" class="logo" width="88" height="88">
             </a>
             <nav class="nav-primary" aria-label="Main">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
-                    <li><a href="about.html" aria-current="page">About Us</a></li>
+                    <li><a href="about.html" aria-current="page">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="page-main">
-        <div class="section-inner about-section">
-            <h1 class="page-title">About CozyCup Café</h1>
-
-            <div class="story">
-                <h2 class="subsection-title">Our Story</h2>
-                <p>
-                    CozyCup Café began as a small neighborhood coffee shop with a big dream – to create a place where people can gather, relax, and enjoy quality coffee. Founded in 2010, our café has grown, but our values remain the same: providing an inviting atmosphere, exceptional service, and the finest coffee blends sourced from sustainable farms.
-                </p>
+    <main class="page-main about-main">
+        <section class="about-hero" aria-labelledby="about-heading">
+            <div class="about-hero__texture" aria-hidden="true"></div>
+            <div class="about-hero__glow" aria-hidden="true"></div>
+            <div class="hero-grain about-hero__grain" aria-hidden="true"></div>
+            <div class="section-inner about-hero__inner">
+                <p class="about-hero__eyebrow"><span class="about-hero__eyebrow-dot" aria-hidden="true"></span> Bean City · Est. 2010</p>
+                <h1 id="about-heading" class="about-hero__title">Our <span class="about-hero__title-accent">story</span></h1>
+                <p class="about-hero__lead">A neighborhood café built on warm welcomes, ethically sourced beans, and the belief that every cup should feel like a small ritual.</p>
+                <ul class="about-hero__chips" aria-label="Highlights">
+                    <li><i class="fa-solid fa-mug-hot" aria-hidden="true"></i> Small-batch roasting</li>
+                    <li><i class="fa-solid fa-seedling" aria-hidden="true"></i> Sustainable sourcing</li>
+                    <li><i class="fa-solid fa-heart" aria-hidden="true"></i> Community first</li>
+                </ul>
+                <nav class="about-jump" aria-label="Jump to section">
+                    <a class="about-jump__btn" href="#our-story"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Our story</a>
+                    <a class="about-jump__btn" href="#team"><i class="fa-solid fa-users" aria-hidden="true"></i> Meet the team</a>
+                    <a class="about-jump__btn" href="#mission"><i class="fa-solid fa-compass" aria-hidden="true"></i> Our mission</a>
+                </nav>
             </div>
+            <div class="about-hero__wave" aria-hidden="true">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path fill="var(--bg)" d="M0,64 C180,20 360,100 540,64 C720,28 900,100 1080,64 C1260,28 1380,48 1440,40 L1440,120 L0,120 Z"/></svg>
+            </div>
+        </section>
 
-            <div class="team-section">
-                <h2 class="subsection-title">Meet the Team</h2>
-                <div class="team-grid">
-                    <article class="team-member">
-                        <img src="images/owner.jpg" alt="Portrait of the owner">
-                        <h3>Me</h3>
-                        <p class="team-role">Owner &amp; Founder</p>
-                        <p>Earl’s passion for coffee and community is the heart of CozyCup Café. With a background in culinary arts, she’s committed to making every cup special.</p>
+        <div class="about-marquee" aria-hidden="true">
+            <div class="about-marquee__track">
+                <span><i class="fa-solid fa-mug-hot"></i> Since 2010</span>
+                <span><i class="fa-solid fa-leaf"></i> Ethically sourced</span>
+                <span><i class="fa-solid fa-hand-holding-heart"></i> Neighborhood owned</span>
+                <span><i class="fa-solid fa-couch"></i> Room to linger</span>
+                <span><i class="fa-solid fa-mug-hot"></i> Since 2010</span>
+                <span><i class="fa-solid fa-leaf"></i> Ethically sourced</span>
+                <span><i class="fa-solid fa-hand-holding-heart"></i> Neighborhood owned</span>
+                <span><i class="fa-solid fa-couch"></i> Room to linger</span>
+            </div>
+        </div>
+
+        <div class="section-inner about-page">
+            <section class="about-metrics" aria-label="Café at a glance">
+                <ul class="about-metrics__grid">
+                    <li class="metric-card">
+                        <span class="metric-card__icon" aria-hidden="true"><i class="fa-solid fa-calendar-days"></i></span>
+                        <span class="metric-card__value">2010</span>
+                        <span class="metric-card__unit">Founded</span>
+                        <p class="metric-card__label">Opened as a single-counter neighborhood shop on Coffee St.</p>
+                    </li>
+                    <li class="metric-card">
+                        <span class="metric-card__icon" aria-hidden="true"><i class="fa-solid fa-mug-saucer"></i></span>
+                        <span class="metric-card__value">50+</span>
+                        <span class="metric-card__unit">Drinks</span>
+                        <p class="metric-card__label">Espresso classics, seasonal specials, and plant-based options.</p>
+                    </li>
+                    <li class="metric-card">
+                        <span class="metric-card__icon" aria-hidden="true"><i class="fa-solid fa-users"></i></span>
+                        <span class="metric-card__value">3</span>
+                        <span class="metric-card__unit">Core team</span>
+                        <p class="metric-card__label">The same faces behind the bar, year after year.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="our-story" class="about-story">
+                <div class="about-story__media">
+                    <figure class="about-story__frame">
+                        <img src="images/about-page.png" alt="Warm interior of CozyCup Café with espresso bar and seating" width="640" height="480" loading="lazy">
+                    </figure>
+                </div>
+                <div class="about-story__copy">
+                    <span class="section-badge">Our story</span>
+                    <h2 class="subsection-title">From one counter to a community hub</h2>
+                    <p>CozyCup Café began as a small neighborhood coffee shop with a big dream — to create a place where people can gather, relax, and enjoy quality coffee.</p>
+                    <p>Founded in 2010, our café has grown, but our values remain the same: an inviting atmosphere, exceptional service, and the finest blends sourced from sustainable farms.</p>
+                    <ul class="about-story__list">
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Direct-trade relationships with growers</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> In-house baking every morning</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Free Wi‑Fi and space to stay awhile</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="about-values" aria-labelledby="values-heading">
+                <header class="section-head section-head--split">
+                    <div>
+                        <span class="section-badge">What we stand for</span>
+                        <h2 id="values-heading" class="section-title section-title--left">More than a cup of coffee</h2>
+                        <p class="section-lead section-lead--left">Three principles that guide every pour, pastry, and conversation at the bar.</p>
+                    </div>
+                </header>
+                <ul class="highlight-list">
+                    <li class="highlight-card">
+                        <span class="highlight-card__icon" aria-hidden="true"><i class="fa-solid fa-star"></i></span>
+                        <h3 class="highlight-card__title">Quality first</h3>
+                        <p>Small batches, dialed recipes, and ingredients we would serve to our own families.</p>
+                    </li>
+                    <li class="highlight-card">
+                        <span class="highlight-card__icon" aria-hidden="true"><i class="fa-solid fa-earth-americas"></i></span>
+                        <h3 class="highlight-card__title">Sustainability</h3>
+                        <p>Compostable cups, responsible sourcing, and partnerships with farms that care for the land.</p>
+                    </li>
+                    <li class="highlight-card">
+                        <span class="highlight-card__icon" aria-hidden="true"><i class="fa-solid fa-handshake"></i></span>
+                        <h3 class="highlight-card__title">Connection</h3>
+                        <p>A third place for regulars, remote workers, and anyone who needs five quiet minutes.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="team" class="about-team">
+                <header class="about-team__head">
+                    <span class="section-badge">The people</span>
+                    <h2 class="subsection-title">Meet the team</h2>
+                    <p class="about-team__lead">The baristas and owner who pour heart into every shift.</p>
+                </header>
+                <div class="about-team__grid">
+                    <article class="about-team-card">
+                        <div class="about-team-card__avatar" aria-hidden="true">
+                            <span class="about-team-card__initials">E</span>
+                        </div>
+                        <div class="about-team-card__body">
+                            <h3 class="about-team-card__name">Earl</h3>
+                            <p class="about-team-card__role">Owner &amp; Founder</p>
+                            <p>Earl's passion for coffee and community is the heart of CozyCup Café. With a background in culinary arts, she's committed to making every cup special.</p>
+                        </div>
                     </article>
-                    <article class="team-member">
-                        <img src="images/barista1.jpg" alt="Portrait of head barista">
-                        <h3>Myself</h3>
-                        <p class="team-role">Head Barista</p>
-                        <p>Justine is a coffee enthusiast with over 10 years of experience. He’s always eager to craft the perfect cup, whether it’s a classic espresso or a custom brew.</p>
+                    <article class="about-team-card">
+                        <div class="about-team-card__avatar" aria-hidden="true">
+                            <span class="about-team-card__initials">J</span>
+                        </div>
+                        <div class="about-team-card__body">
+                            <h3 class="about-team-card__name">Justine</h3>
+                            <p class="about-team-card__role">Head Barista</p>
+                            <p>A coffee enthusiast with over 10 years of experience. Always eager to craft the perfect cup, whether it's a classic espresso or a custom brew.</p>
+                        </div>
                     </article>
-                    <article class="team-member">
-                        <img src="images/barista2.jpg" alt="Portrait of barista">
-                        <h3>&amp; I</h3>
-                        <p class="team-role">Barista</p>
-                        <p>Laquoirez brings a warm smile and exceptional service to every customer. She’s known for her latte art and loves experimenting with new flavors.</p>
+                    <article class="about-team-card">
+                        <div class="about-team-card__avatar" aria-hidden="true">
+                            <span class="about-team-card__initials">L</span>
+                        </div>
+                        <div class="about-team-card__body">
+                            <h3 class="about-team-card__name">Laquoirez</h3>
+                            <p class="about-team-card__role">Barista</p>
+                            <p>Brings a warm smile and exceptional service to every customer. Known for latte art and loves experimenting with new flavors.</p>
+                        </div>
                     </article>
                 </div>
-            </div>
+            </section>
 
-            <div class="mission-section">
-                <h2 class="subsection-title">Our Mission</h2>
-                <p>
-                    At CozyCup Café, our mission is to create a cozy and welcoming environment where coffee enthusiasts and casual visitors alike can unwind and enjoy the moment. We believe in quality over quantity, sustainability, and building connections within our community. Our goal is to make every visit memorable, whether you're grabbing a quick coffee or spending time with friends.
-                </p>
-            </div>
+            <section id="mission" class="about-mission" aria-labelledby="mission-heading">
+                <div class="about-mission__inner">
+                    <div class="about-mission__copy">
+                        <span class="about-mission__badge"><i class="fa-solid fa-compass" aria-hidden="true"></i> Our mission</span>
+                        <h2 id="mission-heading" class="about-mission__title">A cozy pause in a busy day</h2>
+                        <p class="about-mission__text">We create a welcoming environment where coffee enthusiasts and casual visitors alike can unwind and enjoy the moment. Quality over quantity, sustainability, and real connections within our community — that's what every visit is for.</p>
+                    </div>
+                    <div class="about-mission__actions">
+                        <a href="menu.html" class="btn btn-cta-primary"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i> Explore the menu</a>
+                        <a href="contact.html" class="btn btn-cta-ghost">Plan your visit</a>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer--home">
         <div class="footer-container section-inner">
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="" class="footer-brand__logo" width="64" height="64">
+                <p class="footer-brand__tagline">Warm cups, slow mornings, and a seat waiting for you.</p>
+            </div>
             <div class="footer-contact">
-                <h3>Contact Us</h3>
+                <h3>Contact</h3>
                 <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 123 Coffee St, Bean City, BC 12345</p>
                 <p><i class="fas fa-phone-alt" aria-hidden="true"></i> (123) 456-7890</p>
                 <p><i class="fas fa-envelope" aria-hidden="true"></i> info@cozycup.com</p>
             </div>
             <div class="footer-social">
-                <h3>Follow Us</h3>
+                <h3>Follow</h3>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/yourprofile" class="social-icon" title="Facebook" target="_blank" rel="noopener noreferrer"><img src="images/fb.png" alt="Facebook"></a>
-                    <a href="https://twitter.com/yourprofile" class="social-icon" title="Twitter" target="_blank" rel="noopener noreferrer"><img src="images/twitter.png" alt="Twitter"></a>
                     <a href="https://www.instagram.com/yourprofile" class="social-icon" title="Instagram" target="_blank" rel="noopener noreferrer"><img src="images/insta.png" alt="Instagram"></a>
-                    <a href="https://www.youtube.com/c/yourchannel" class="social-icon" title="YouTube" target="_blank" rel="noopener noreferrer"><img src="images/youtube.png" alt="YouTube"></a>
+                    <a href="https://www.facebook.com/yourprofile" class="social-icon" title="Facebook" target="_blank" rel="noopener noreferrer"><img src="images/fb.png" alt="Facebook"></a>
                 </div>
             </div>
             <div class="footer-newsletter">
-                <h3>Subscribe to Our Newsletter</h3>
+                <h3>Newsletter</h3>
                 <form action="#" method="post">
-                    <input type="email" name="email" placeholder="Enter your email" required autocomplete="email">
+                    <input type="email" name="email" placeholder="Your email" required autocomplete="email">
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
         </div>
+        <p class="footer-bottom section-inner">© 2026 CozyCup Café</p>
     </footer>
 </body>
 </html>
