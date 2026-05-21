@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visit CozyCup Café in Bean City — hours, directions, phone, email, and a message form. Walk-ins welcome, patio seating, and free Wi-Fi.">
+    <meta name="theme-color" content="#2d241d">
     <title>Contact — CozyCup Café</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +16,7 @@
     <header class="site-header">
         <div class="section-inner navbar">
             <a href="index.html" class="logo-link">
-                <img src="images/logo.png" alt="CozyCup Café home" class="logo">
+                <img src="images/logo.png" alt="CozyCup Café home" class="logo" width="88" height="88">
             </a>
             <nav class="nav-primary" aria-label="Main">
                 <ul>
@@ -31,34 +33,75 @@
         <section class="contact-hero" aria-labelledby="contact-heading">
             <div class="contact-hero__texture" aria-hidden="true"></div>
             <div class="contact-hero__glow" aria-hidden="true"></div>
+            <div class="hero-grain contact-hero__grain" aria-hidden="true"></div>
             <div class="section-inner contact-hero__inner">
-                <p class="contact-hero__eyebrow">Visit CozyCup</p>
-                <h1 id="contact-heading" class="contact-hero__title">Let's Share a Great Cup Together</h1>
+                <p class="contact-hero__eyebrow"><span class="contact-hero__eyebrow-dot" aria-hidden="true"></span> Bean City · Coffee St</p>
+                <h1 id="contact-heading" class="contact-hero__title">Let's share a <span class="contact-hero__title-accent">great cup</span> together</h1>
                 <p class="contact-hero__lead">Stop by for your daily brew, call ahead for pickup, or send a note — we typically reply within one business day.</p>
+                <ul class="contact-hero__chips" aria-label="Visit highlights">
+                    <li><i class="fa-solid fa-mug-hot" aria-hidden="true"></i> Freshly brewed daily</li>
+                    <li><i class="fa-solid fa-wifi" aria-hidden="true"></i> Free Wi-Fi</li>
+                    <li><i class="fa-solid fa-leaf" aria-hidden="true"></i> Locally sourced beans</li>
+                </ul>
                 <nav class="contact-jump" aria-label="Jump to section">
                     <a class="contact-jump__btn" href="#visit-details"><i class="fa-solid fa-store" aria-hidden="true"></i> Visit details</a>
                     <a class="contact-jump__btn" href="#contact-form"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Send a message</a>
                     <a class="contact-jump__btn" href="#find-us"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i> Find us</a>
                 </nav>
-                <ul class="contact-hero__chips">
-                    <li><i class="fas fa-mug-hot" aria-hidden="true"></i> Freshly brewed daily</li>
-                    <li><i class="fas fa-wifi" aria-hidden="true"></i> Free Wi-Fi</li>
-                    <li><i class="fas fa-leaf" aria-hidden="true"></i> Locally sourced beans</li>
-                </ul>
+            </div>
+            <div class="contact-hero__wave" aria-hidden="true">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path fill="var(--bg)" d="M0,64 C180,20 360,100 540,64 C720,28 900,100 1080,64 C1260,28 1380,48 1440,40 L1440,120 L0,120 Z"/></svg>
             </div>
         </section>
 
-        <div class="section-inner contact-section">
+        <div class="contact-marquee" aria-hidden="true">
+            <div class="contact-marquee__track">
+                <span><i class="fa-solid fa-door-open"></i> Walk-ins welcome</span>
+                <span><i class="fa-solid fa-umbrella-beach"></i> Patio when it's sunny</span>
+                <span><i class="fa-solid fa-clock"></i> Open 7 AM – 8 PM</span>
+                <span><i class="fa-solid fa-bicycle"></i> Bike racks out front</span>
+                <span><i class="fa-solid fa-door-open"></i> Walk-ins welcome</span>
+                <span><i class="fa-solid fa-umbrella-beach"></i> Patio when it's sunny</span>
+                <span><i class="fa-solid fa-clock"></i> Open 7 AM – 8 PM</span>
+                <span><i class="fa-solid fa-bicycle"></i> Bike racks out front</span>
+            </div>
+        </div>
+
+        <div class="section-inner contact-page">
+            <section class="contact-metrics" aria-label="Visit at a glance">
+                <ul class="contact-metrics__grid">
+                    <li class="metric-card">
+                        <span class="metric-card__icon" aria-hidden="true"><i class="fa-solid fa-reply"></i></span>
+                        <span class="metric-card__value">24h</span>
+                        <span class="metric-card__unit">Reply time</span>
+                        <p class="metric-card__label">We read every message and respond on the next business day.</p>
+                    </li>
+                    <li class="metric-card">
+                        <span class="metric-card__icon" aria-hidden="true"><i class="fa-solid fa-mug-saucer"></i></span>
+                        <span class="metric-card__value">7–8</span>
+                        <span class="metric-card__unit">Daily hours</span>
+                        <p class="metric-card__label">Open seven days a week from early morning through evening.</p>
+                    </li>
+                    <li class="metric-card">
+                        <span class="metric-card__icon" aria-hidden="true"><i class="fa-solid fa-chair"></i></span>
+                        <span class="metric-card__value">40+</span>
+                        <span class="metric-card__unit">Seats</span>
+                        <p class="metric-card__label">Indoor lounge, window bar, and patio tables when weather allows.</p>
+                    </li>
+                </ul>
+            </section>
+
             <div class="contact-layout">
                 <aside id="visit-details" class="contact-sidebar" aria-label="Cafe contact details">
                     <header class="contact-sidebar__head">
-                        <h2 class="subsection-title">Cafe Details</h2>
+                        <span class="section-badge">Visit us</span>
+                        <h2 class="subsection-title">Café details</h2>
                         <p class="contact-sidebar__note">Walk-ins welcome · patio seating when weather allows</p>
                     </header>
 
                     <ul class="contact-cards">
                         <li class="contact-card">
-                            <span class="contact-card__icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span>
+                            <span class="contact-card__icon" aria-hidden="true"><i class="fa-solid fa-map-marker-alt"></i></span>
                             <div class="contact-card__body">
                                 <h3 class="contact-card__label">Location</h3>
                                 <p>123 Coffee St, Bean City, BC 12345</p>
@@ -66,7 +109,7 @@
                             </div>
                         </li>
                         <li class="contact-card">
-                            <span class="contact-card__icon" aria-hidden="true"><i class="fas fa-phone-alt"></i></span>
+                            <span class="contact-card__icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span>
                             <div class="contact-card__body">
                                 <h3 class="contact-card__label">Phone</h3>
                                 <p><a href="tel:+11234567890">(123) 456-7890</a></p>
@@ -74,7 +117,7 @@
                             </div>
                         </li>
                         <li class="contact-card">
-                            <span class="contact-card__icon" aria-hidden="true"><i class="fas fa-envelope"></i></span>
+                            <span class="contact-card__icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span>
                             <div class="contact-card__body">
                                 <h3 class="contact-card__label">Email</h3>
                                 <p><a href="mailto:info@cozycup.com">info@cozycup.com</a></p>
@@ -82,7 +125,7 @@
                             </div>
                         </li>
                         <li class="contact-card contact-card--hours">
-                            <span class="contact-card__icon" aria-hidden="true"><i class="fas fa-clock"></i></span>
+                            <span class="contact-card__icon" aria-hidden="true"><i class="fa-solid fa-clock"></i></span>
                             <div class="contact-card__body">
                                 <h3 class="contact-card__label">Hours</h3>
                                 <p>Mon – Sun · 7:00 AM – 8:00 PM</p>
@@ -93,8 +136,10 @@
                 </aside>
 
                 <section id="contact-form" class="contact-form-panel" aria-label="Contact form">
+                    <div class="contact-form-panel__accent" aria-hidden="true"></div>
                     <header class="contact-form-panel__head">
-                        <h2 class="subsection-title">Send a Message</h2>
+                        <span class="section-badge">Say hello</span>
+                        <h2 class="subsection-title">Send a message</h2>
                         <p class="contact-form-panel__note">Questions, catering, or feedback — we'd love to hear from you.</p>
                     </header>
                     <form class="contact-form" action="#" method="post">
@@ -116,18 +161,37 @@
                             <label for="message">Message</label>
                             <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help…"></textarea>
                         </div>
+                        <p class="contact-form__hint"><i class="fa-solid fa-lock" aria-hidden="true"></i> Demo form — messages are not sent to a server yet.</p>
                         <button type="submit" class="btn btn-submit">
                             <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
-                            Send Message
+                            Send message
                         </button>
                     </form>
                 </section>
             </div>
 
+            <aside class="contact-cta" aria-label="Quick actions">
+                <div class="contact-cta__copy">
+                    <h2 class="contact-cta__title">Need coffee on the go?</h2>
+                    <p class="contact-cta__text">Call ahead and we'll have your order ready at the counter.</p>
+                </div>
+                <div class="contact-cta__actions">
+                    <a href="tel:+11234567890" class="btn contact-cta__btn contact-cta__btn--primary">
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        Call for pickup
+                    </a>
+                    <a href="menu.html" class="btn contact-cta__btn contact-cta__btn--ghost">
+                        <i class="fa-solid fa-mug-hot" aria-hidden="true"></i>
+                        View menu
+                    </a>
+                </div>
+            </aside>
+
             <section id="find-us" class="map-section map-section--modern" aria-labelledby="map-heading">
                 <div class="map-section__head">
                     <div>
-                        <h2 id="map-heading" class="subsection-title">Find Us Here</h2>
+                        <span class="section-badge">Directions</span>
+                        <h2 id="map-heading" class="subsection-title">Find us here</h2>
                         <p class="map-section__lead">Corner of Coffee St &amp; Main — look for the warm lights and the aroma.</p>
                     </div>
                     <a href="https://maps.google.com" class="btn btn-map" target="_blank" rel="noopener noreferrer">
