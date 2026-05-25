@@ -27,6 +27,9 @@
     --radius-xl: 28px;
     --glass: rgba(255, 253, 249, 0.14);
     --glass-border: rgba(255, 248, 240, 0.22);
+    --header-logo-size: 64px;
+    --nav-link-font: 0.88rem;
+    --nav-link-padding: 0.4rem 0.65rem;
 }
 
 *,
@@ -619,6 +622,11 @@ img {
     box-shadow: var(--shadow-sm);
 }
 
+.site-header .navbar {
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-sm);
+}
+
 /* ——— Navigation ——— */
 
 .navbar {
@@ -649,7 +657,7 @@ img {
 }
 
 .logo {
-    width: 88px;
+    width: var(--header-logo-size);
     height: auto;
     border: 2px solid rgba(221, 129, 16, 0.65);
     border-radius: var(--radius-sm);
@@ -677,9 +685,9 @@ img {
     display: inline-block;
     text-decoration: none;
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: var(--nav-link-font);
     letter-spacing: 0.02em;
-    padding: 0.5rem 0.85rem;
+    padding: var(--nav-link-padding);
     border-radius: var(--radius-sm);
     border: 2px solid transparent;
     transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
@@ -1287,7 +1295,7 @@ img {
 
 .menu-tabs {
     position: sticky;
-    top: calc(4.5rem + var(--space-xs));
+    top: calc(3.5rem + var(--space-xs));
     z-index: 50;
     display: flex;
     flex-wrap: wrap;
@@ -3644,9 +3652,9 @@ body {
     display: none;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
-    width: 2.75rem;
-    height: 2.75rem;
+    gap: 4px;
+    width: 2.25rem;
+    height: 2.25rem;
     margin-left: auto;
     padding: 0;
     border: 1px solid rgba(255, 248, 240, 0.28);
@@ -3668,7 +3676,7 @@ body {
 
 .nav-toggle__bar {
     display: block;
-    width: 1.15rem;
+    width: 1rem;
     height: 2px;
     margin-inline: auto;
     background: var(--hero-text);
@@ -3677,7 +3685,7 @@ body {
 }
 
 .nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
+    transform: translateY(6px) rotate(45deg);
 }
 
 .nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(2) {
@@ -3685,7 +3693,7 @@ body {
 }
 
 .nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
+    transform: translateY(-6px) rotate(-45deg);
 }
 
 .page-home .hero-top,
@@ -3930,7 +3938,7 @@ body.home-scrolled .home-sticky-bar {
     align-items: center;
     justify-content: space-between;
     gap: var(--space-md);
-    padding-top: var(--space-md);
+    padding-top: var(--space-sm);
     padding-bottom: var(--space-sm);
 }
 
