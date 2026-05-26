@@ -28,6 +28,8 @@
     --glass: rgba(255, 253, 249, 0.14);
     --glass-border: rgba(255, 248, 240, 0.22);
     --header-logo-size: 64px;
+    --header-logo-size-bar: 44px;
+    --header-bar-padding: 0.4rem;
     --nav-link-font: 0.88rem;
     --nav-link-padding: 0.4rem 0.65rem;
 }
@@ -623,8 +625,14 @@ img {
 }
 
 .site-header .navbar {
-    padding-top: var(--space-sm);
-    padding-bottom: var(--space-sm);
+    padding-top: var(--header-bar-padding);
+    padding-bottom: var(--header-bar-padding);
+    gap: var(--space-sm);
+}
+
+.site-header .logo {
+    width: var(--header-logo-size-bar);
+    border-width: 1px;
 }
 
 /* ——— Navigation ——— */
