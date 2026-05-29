@@ -27,50 +27,67 @@
     </header>
 
     <main class="page-main contact-main">
-        <div class="section-inner contact-content">
-            <header class="contact-intro">
-                <p class="contact-intro__eyebrow">Bean City · Coffee St</p>
-                <h1 class="contact-intro__title">Contact us</h1>
-                <p class="contact-intro__lead">Stop by for your daily brew, call ahead for pickup, or send a note — we typically reply within one business day.</p>
-            </header>
+        <section class="contact-hero" aria-labelledby="contact-heading">
+            <div class="contact-hero__texture" aria-hidden="true"></div>
+            <div class="contact-hero__glow" aria-hidden="true"></div>
+            <div class="hero-grain contact-hero__grain" aria-hidden="true"></div>
+            <div class="section-inner contact-hero__inner">
+                <p class="contact-hero__eyebrow"><span class="contact-hero__eyebrow-dot" aria-hidden="true"></span> Bean City · Coffee St</p>
+                <h1 id="contact-heading" class="contact-hero__title">Get in <span class="contact-hero__title-accent">touch</span></h1>
+                <p class="contact-hero__lead">Stop by for your daily brew, call ahead for pickup, or send a note — we typically reply within one business day.</p>
+            </div>
+            <div class="contact-hero__wave" aria-hidden="true">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path fill="var(--contact-bg, var(--bg))" d="M0,64 C180,20 360,100 540,64 C720,28 900,100 1080,64 C1260,28 1380,48 1440,40 L1440,120 L0,120 Z"/></svg>
+            </div>
+        </section>
 
+        <div class="section-inner contact-content">
             <dl class="contact-facts" aria-label="Visit at a glance">
                 <div class="contact-facts__item">
-                    <dt>Hours</dt>
+                    <dt><i class="fa-regular fa-clock" aria-hidden="true"></i> Hours</dt>
                     <dd>Mon – Sun, 7:00 AM – 8:00 PM</dd>
                 </div>
                 <div class="contact-facts__item">
-                    <dt>Reply time</dt>
+                    <dt><i class="fa-regular fa-envelope" aria-hidden="true"></i> Reply time</dt>
                     <dd>Within one business day for email and form messages.</dd>
                 </div>
                 <div class="contact-facts__item">
-                    <dt>Amenities</dt>
+                    <dt><i class="fa-solid fa-wifi" aria-hidden="true"></i> Amenities</dt>
                     <dd>Free Wi‑Fi, patio seating, walk-ins welcome.</dd>
                 </div>
             </dl>
 
             <div class="contact-grid">
-                <section id="visit-details" class="contact-section">
+                <section id="visit-details" class="contact-card contact-section">
                     <h2 class="contact-section__title">Visit us</h2>
                     <ul class="contact-details">
                         <li>
-                            <span class="contact-details__label">Address</span>
-                            <p>123 Coffee St, Bean City, BC 12345</p>
-                            <a href="#find-us">Get directions</a>
+                            <span class="contact-details__icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+                            <div class="contact-details__body">
+                                <span class="contact-details__label">Address</span>
+                                <p>123 Coffee St, Bean City, BC 12345</p>
+                                <a href="#find-us">Get directions</a>
+                            </div>
                         </li>
                         <li>
-                            <span class="contact-details__label">Phone</span>
-                            <p><a href="tel:+11234567890">(123) 456-7890</a></p>
+                            <span class="contact-details__icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span>
+                            <div class="contact-details__body">
+                                <span class="contact-details__label">Phone</span>
+                                <p><a href="tel:+11234567890">(123) 456-7890</a></p>
+                            </div>
                         </li>
                         <li>
-                            <span class="contact-details__label">Email</span>
-                            <p><a href="mailto:info@cozycup.com">info@cozycup.com</a></p>
+                            <span class="contact-details__icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span>
+                            <div class="contact-details__body">
+                                <span class="contact-details__label">Email</span>
+                                <p><a href="mailto:info@cozycup.com">info@cozycup.com</a></p>
+                            </div>
                         </li>
                     </ul>
                     <p class="contact-section__note">Walk-ins welcome · patio seating when weather allows</p>
                 </section>
 
-                <section id="contact-form" class="contact-section" aria-labelledby="form-heading">
+                <section id="contact-form" class="contact-card contact-section contact-card--form" aria-labelledby="form-heading">
                     <h2 id="form-heading" class="contact-section__title">Send a message</h2>
                     <p class="contact-section__intro">Questions, catering, or feedback — we'd love to hear from you.</p>
                     <form class="contact-form" action="#" method="post">
@@ -98,13 +115,13 @@
                 </section>
             </div>
 
-            <section id="find-us" class="contact-section contact-section--map" aria-labelledby="map-heading">
+            <section id="find-us" class="contact-card contact-section contact-section--map" aria-labelledby="map-heading">
                 <div class="contact-section__map-head">
                     <div>
                         <h2 id="map-heading" class="contact-section__title">Find us</h2>
                         <p class="contact-section__intro">Corner of Coffee St &amp; Main — look for the warm lights and the aroma.</p>
                     </div>
-                    <a href="https://maps.google.com" class="contact-map-link" target="_blank" rel="noopener noreferrer">Open in Maps</a>
+                    <a href="https://maps.google.com" class="contact-map-link" target="_blank" rel="noopener noreferrer">Open in Maps <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                 </div>
                 <div class="contact-map">
                     <iframe
