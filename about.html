@@ -27,91 +27,126 @@
     </header>
 
     <main class="page-main about-main">
-        <div class="section-inner about-content">
-            <header class="about-intro">
-                <p class="about-intro__eyebrow">Bean City · Est. 2010</p>
-                <h1 class="about-intro__title">About CozyCup Café</h1>
-                <p class="about-intro__lead">A neighborhood coffee shop where people gather for quality coffee, fresh baking, and a welcoming place to stay awhile.</p>
-            </header>
+        <section class="about-hero" aria-labelledby="about-heading">
+            <div class="about-hero__texture" aria-hidden="true"></div>
+            <div class="about-hero__glow" aria-hidden="true"></div>
+            <div class="hero-grain about-hero__grain" aria-hidden="true"></div>
+            <div class="section-inner about-hero__inner">
+                <p class="about-hero__eyebrow"><span class="about-hero__eyebrow-dot" aria-hidden="true"></span> Bean City · Est. 2010</p>
+                <h1 id="about-heading" class="about-hero__title">Our <span class="about-hero__title-accent">story</span></h1>
+                <p class="about-hero__lead">A neighborhood coffee shop where people gather for quality coffee, fresh baking, and a welcoming place to stay awhile.</p>
+                <nav class="about-jump" aria-label="Skip to section">
+                    <a class="about-jump__btn" href="#our-story"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Story</a>
+                    <a class="about-jump__btn" href="#values"><i class="fa-solid fa-heart" aria-hidden="true"></i> Values</a>
+                    <a class="about-jump__btn" href="#team"><i class="fa-solid fa-users" aria-hidden="true"></i> Team</a>
+                </nav>
+            </div>
+            <div class="about-hero__wave" aria-hidden="true">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path fill="var(--about-bg, var(--bg))" d="M0,64 C180,20 360,100 540,64 C720,28 900,100 1080,64 C1260,28 1380,48 1440,40 L1440,120 L0,120 Z"/></svg>
+            </div>
+        </section>
 
+        <div class="section-inner about-content">
             <dl class="about-facts" aria-label="Café at a glance">
                 <div class="about-facts__item">
-                    <dt>Founded</dt>
+                    <dt><i class="fa-solid fa-store" aria-hidden="true"></i> Founded</dt>
                     <dd>2010 — opened as a single-counter shop on Coffee St.</dd>
                 </div>
                 <div class="about-facts__item">
-                    <dt>Menu</dt>
+                    <dt><i class="fa-solid fa-mug-hot" aria-hidden="true"></i> Menu</dt>
                     <dd>50+ drinks — espresso classics, seasonal specials, and plant-based options.</dd>
                 </div>
                 <div class="about-facts__item">
-                    <dt>Team</dt>
+                    <dt><i class="fa-solid fa-handshake" aria-hidden="true"></i> Team</dt>
                     <dd>3 core staff — the same faces behind the bar, year after year.</dd>
                 </div>
             </dl>
 
-            <section id="our-story" class="about-section">
-                <h2 class="about-section__title">Our story</h2>
-                <div class="about-section__split">
-                    <figure class="about-section__figure">
-                        <img src="images/about-page.png" alt="Warm interior of CozyCup Café with espresso bar and seating" width="640" height="480" loading="lazy">
+            <section id="our-story" class="about-panel">
+                <header class="about-panel__head">
+                    <span class="section-badge">Since 2010</span>
+                    <h2 class="about-panel__title">Our story</h2>
+                </header>
+                <div class="about-panel__split">
+                    <figure class="about-panel__figure">
+                        <div class="about-panel__frame">
+                            <img src="images/about-page.png" alt="Warm interior of CozyCup Café with espresso bar and seating" width="640" height="480" loading="lazy">
+                        </div>
                     </figure>
-                    <div class="about-section__body">
+                    <div class="about-panel__body">
                         <p>CozyCup Café began as a small neighborhood coffee shop with a big dream — to create a place where people can gather, relax, and enjoy quality coffee.</p>
                         <p>Founded in 2010, our café has grown, but our values remain the same: an inviting atmosphere, exceptional service, and the finest blends sourced from sustainable farms.</p>
-                        <ul class="about-section__list">
-                            <li>Direct-trade relationships with growers</li>
-                            <li>In-house baking every morning</li>
-                            <li>Free Wi‑Fi and space to stay awhile</li>
+                        <ul class="about-panel__list">
+                            <li><i class="fa-solid fa-seedling" aria-hidden="true"></i> Direct-trade relationships with growers</li>
+                            <li><i class="fa-solid fa-bread-slice" aria-hidden="true"></i> In-house baking every morning</li>
+                            <li><i class="fa-solid fa-wifi" aria-hidden="true"></i> Free Wi‑Fi and space to stay awhile</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <section class="about-section" aria-labelledby="values-heading">
-                <h2 id="values-heading" class="about-section__title">What we stand for</h2>
-                <p class="about-section__intro">Three principles that guide every pour, pastry, and conversation at the bar.</p>
+            <section id="values" class="about-panel about-panel--alt" aria-labelledby="values-heading">
+                <header class="about-panel__head about-panel__head--center">
+                    <span class="section-badge">What guides us</span>
+                    <h2 id="values-heading" class="about-panel__title">What we stand for</h2>
+                    <p class="about-panel__intro">Three principles that guide every pour, pastry, and conversation at the bar.</p>
+                </header>
                 <ul class="about-principles">
-                    <li>
+                    <li class="about-principle">
+                        <span class="about-principle__icon" aria-hidden="true"><i class="fa-solid fa-star"></i></span>
                         <h3>Quality first</h3>
                         <p>Small batches, dialed recipes, and ingredients we would serve to our own families.</p>
                     </li>
-                    <li>
+                    <li class="about-principle">
+                        <span class="about-principle__icon" aria-hidden="true"><i class="fa-solid fa-leaf"></i></span>
                         <h3>Sustainability</h3>
                         <p>Compostable cups, responsible sourcing, and partnerships with farms that care for the land.</p>
                     </li>
-                    <li>
+                    <li class="about-principle">
+                        <span class="about-principle__icon" aria-hidden="true"><i class="fa-solid fa-mug-saucer"></i></span>
                         <h3>Connection</h3>
                         <p>A third place for regulars, remote workers, and anyone who needs five quiet minutes.</p>
                     </li>
                 </ul>
             </section>
 
-            <section id="team" class="about-section">
-                <h2 class="about-section__title">Meet the team</h2>
-                <p class="about-section__intro">The baristas and owner who pour heart into every shift.</p>
+            <section id="team" class="about-panel">
+                <header class="about-panel__head about-panel__head--center">
+                    <span class="section-badge">Behind the bar</span>
+                    <h2 class="about-panel__title">Meet the team</h2>
+                    <p class="about-panel__intro">The baristas and owner who pour heart into every shift.</p>
+                </header>
                 <ul class="about-team">
-                    <li class="about-team__member">
+                    <li class="about-team__card">
+                        <span class="about-team__initial" aria-hidden="true">E</span>
                         <h3>Earl <span class="about-team__role">Owner &amp; Founder</span></h3>
                         <p>Earl's passion for coffee and community is the heart of CozyCup Café. With a background in culinary arts, she's committed to making every cup special.</p>
                     </li>
-                    <li class="about-team__member">
+                    <li class="about-team__card">
+                        <span class="about-team__initial" aria-hidden="true">J</span>
                         <h3>Justine <span class="about-team__role">Head Barista</span></h3>
                         <p>A coffee enthusiast with over 10 years of experience. Always eager to craft the perfect cup, whether it's a classic espresso or a custom brew.</p>
                     </li>
-                    <li class="about-team__member">
+                    <li class="about-team__card">
+                        <span class="about-team__initial" aria-hidden="true">L</span>
                         <h3>Laquoirez <span class="about-team__role">Barista</span></h3>
                         <p>Brings a warm smile and exceptional service to every customer. Known for latte art and loves experimenting with new flavors.</p>
                     </li>
                 </ul>
             </section>
 
-            <section id="mission" class="about-section about-section--mission" aria-labelledby="mission-heading">
-                <h2 id="mission-heading" class="about-section__title">Our mission</h2>
-                <p>We create a welcoming environment where coffee enthusiasts and casual visitors alike can unwind and enjoy the moment. Quality over quantity, sustainability, and real connections within our community — that's what every visit is for.</p>
-                <p class="about-section__links">
-                    <a href="menu.html">Explore the menu</a>
-                    <a href="contact.html">Plan your visit</a>
-                </p>
+            <section id="mission" class="about-cta" aria-labelledby="mission-heading">
+                <div class="about-cta__inner">
+                    <div class="about-cta__copy">
+                        <p class="about-cta__badge"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i> Our mission</p>
+                        <h2 id="mission-heading" class="about-cta__title">Quality over quantity, always.</h2>
+                        <p class="about-cta__text">We create a welcoming environment where coffee enthusiasts and casual visitors alike can unwind and enjoy the moment. Sustainability and real connections within our community — that's what every visit is for.</p>
+                    </div>
+                    <div class="about-cta__actions">
+                        <a href="menu.html" class="btn btn-cta-primary"><i class="fa-solid fa-utensils" aria-hidden="true"></i> Explore the menu</a>
+                        <a href="contact.html" class="btn btn-cta-ghost">Plan your visit</a>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
@@ -144,5 +179,6 @@
         </div>
         <p class="footer-bottom section-inner">© 2026 CozyCup Café</p>
     </footer>
+    <script src="main.js" defer></script>
 </body>
 </html>
